@@ -1,0 +1,125 @@
+#bir005-banner{
+    position: relative;
+}
+.bir005-banner{
+    background-color: #FFCC70;
+    position: relative;
+    padding-bottom: 5%;
+}
+.bir005-lban{
+    position: absolute;
+    width: 30%;
+    left: -1%;
+    transform: scaleX(-1);
+    z-index: 2;
+
+}
+.bir005-rban{
+    position: absolute;
+    width:30%;
+    right:0%;
+    z-index: 2;
+}
+.bir005-banner-content{
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    flex-direction: column;
+}
+.bir005-bannerpic{
+    text-align: center;
+    z-index: 1;
+    position:relative;
+    top: 3em;
+}
+.bir005-babypic{
+    width:70%;
+}
+.bir005-ballon{
+    position: relative;
+    width: 15%;
+}
+#bir005-rightballon{
+    left: -2%;
+}
+#bir005-leftballon{
+    transform: scaleX(-1);
+    left: 2%;
+}
+.bir005-invite{
+    font-family: 'Hyggemand',sans-serif;
+    color: #408FBB;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    top: 3em;
+    background-color: #FFCC70;
+    padding-bottom:5% ;    
+}
+.bir005-invite p{
+    color: #B55200;
+    font-size: large;
+    margin: 5px;
+}
+.bir005-invite h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.bir005-clouds{
+    width: 70%;
+    position: absolute;
+    transition: transform 0.5s ease;
+    z-index: 2;
+    top: 50%;
+
+}
+#bir005-lcloud{
+    left: 10%;
+}
+#bir005-rcloud{
+    right: 10%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cloudMovel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+@keyframes cloudMover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(80%);
+    }
+}
+
+.bir005-invite {
+    animation: none;
+}
+
+.bir005-invite.active {
+    animation: fadeIn 1s forwards;
+    animation-iteration-count: 1;
+}
+
+#bir005-lcloud {
+    animation: cloudMovel 2s ease-in-out forwards;
+}
+
+#bir005-rcloud {
+    animation: cloudMover 2s ease-in-out forwards;
+}

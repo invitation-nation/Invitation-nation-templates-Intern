@@ -1,0 +1,62 @@
+#bir005-activity{
+    position:relative;
+    top:6em;
+    font-family: 'Hyggemand';
+
+
+}
+.bir005-act-container{
+    margin-bottom: 5%;
+
+}
+.bir005-container {
+    padding: 20px;
+}
+.bir005-title {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    color: #4A90E2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.bir005-title span {
+    margin: 0 2%;
+}
+.bir005-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+.bir005-carousel .bir005-arrow {
+    font-size: 24px;
+    color: #4A90E2;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.bir005-carousel .bir005-activities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bir005-activityn {
+    margin: 0 10px;
+    text-align: center;
+}
+.bir005-activityn img {
+    width: 70%;
+    border-radius: 50%;
+}
+.bir005-activityn .bir005-description {
+    background: var(--gold-glow, radial-gradient(51.2% 49.57% at 46.32% 54.81%, #F7C979 0.56%, #F7C36E 19.04%, #F7B352 51.1%, #F79824 92.66%, #F7941D 98.88%));    color: white;
+    border: 6px solid var(--Deep-Brown, #B55200);
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: -20px;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
