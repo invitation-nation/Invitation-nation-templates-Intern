@@ -1,0 +1,114 @@
+#bor005-hero{
+    position: relative;
+}
+.bir005-herocloud {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+    width: 100%;
+}
+
+.bir005-navbar {
+    position: absolute;
+    background-color: #408FBB;
+    padding: 10px 0;
+    font-family: 'DM Sans';
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    z-index: 2;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 0%;
+}
+.bir005-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 18px;
+}
+
+.bir005-hero-animation {
+    width: 40%; 
+    height: 40%;
+    background-size: cover;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    z-index: 1;
+    animation: changeImage 2.5s infinite;
+}
+@keyframes changeImage {
+    0% { background-image: url('../assets/img/Bir005-Hero/Star1.svg'); }
+    50% { background-image: url('../assets/img/Bir005-Hero/Star2.svg'); }
+    100% { background-image: url('../assets/img/Bir005-Hero/Star1.svg'); }
+}
+.bir005-titleinfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-family: 'browncat';
+    text-align: center;
+    font-size: 2.6em;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 2;
+    top: 30%;
+}
+
+#bir005-namebir{
+    font-size: 2em;
+    margin: 1%;
+}
+.bir005-titleinfo p{
+    color: #2E97C2;
+    margin: 1%;
+    font-weight: 400;
+    font-size: 0.7em;
+    font-family: 'Hyggemand';
+}
+.bir005-titleinfo h1{
+    color: #B55200;
+    margin: 0%;
+    font-weight: 400;
+}
+.bir005-heroteddy{
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+    top: 10%;
+    width: 30%;
+}
+
+.bir005-mapbutton {
+    background-color: #B55200;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'sorroundsignal';
+    font-weight: 400;
+    font-size: 2rem;
+    color: #FFFADD;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width:40%;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 15px;
+    border: 3px solid #B55200;
+    height: 40px;
+
+}
+.bir005-mapbutton:hover {
+    background-color: #FFFADD;
+    color: #B55200;
+}
+.bir005-mapbutton img{
+    width: 6%;
+    padding: 5px;
+}

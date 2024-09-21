@@ -1,0 +1,50 @@
+#bir005-countdown{
+    position:relative;
+    
+}
+.bir005-counttitle{
+    font-family: 'Hyggemand';
+    color:#408FBB;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-bottom:0 ;
+    height: fit-content;
+
+}
+.bir005-countbox{
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    z-index: 1;
+}
+.bir005-countcontent{
+    margin: 15px;
+    background-color: #FFCC70;
+    color: #B55200;
+    width: 15%;
+    border: 3px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.bir005-countcontent p{
+    margin: 10%;
+}
+.bir005-numb{
+    font-size: 1.6em;
+}
+.bir005-teddyimg{
+    position: absolute;
+    left: 0%;
+    width: 20%;
+    top: 10%;
+}
+.bir005-capimg{
+    position:absolute;
+    left: 69.5%;
+    top: 18%;
+    width: 5%;
+    transform: rotate(10deg);
+}

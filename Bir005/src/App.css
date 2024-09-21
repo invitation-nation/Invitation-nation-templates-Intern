@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'browncat';
+  src: url(./assets/fonts/Browncat.ttf);
+}
+@font-face {
+  font-family: 'sorroundsignal';
+  src: url(./assets/fonts/SurroundSignalDEMO-Regular.otf);
+}
+@font-face {
+  font-family: 'Hyggemand';
+  src: url(./assets/fonts/HyggemandDEMO-Regular.otf);
+}
+
+html{
+  background: #FFFADD;
+  margin: 0;
+  width: 100vw;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+.nimbus-container {
+  max-width: 128rem;
+  margin: 0 auto;
+  height: fit-content;
+}
