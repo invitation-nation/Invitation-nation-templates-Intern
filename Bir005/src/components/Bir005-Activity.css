@@ -1,10 +1,9 @@
 #bir005-activity{
     position:relative;
-    top:6em;
     font-family: 'Hyggemand';
-
-
+    margin: 5% 0;
 }
+
 .bir005-act-container{
     margin-bottom: 5%;
 

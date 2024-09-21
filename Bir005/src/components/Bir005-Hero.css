@@ -2,7 +2,7 @@
     position: relative;
 }
 .bir005-herocloud {
-    height: 100vh;
+    height: 100%;
     position: relative;
     background-size: cover;
     z-index: 0;
@@ -18,9 +18,9 @@
     margin: 20px;
     border-radius: 20px;
     z-index: 2;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     top: 0%;
 }
 .bir005-navbar a {
@@ -31,8 +31,9 @@
 }
 
 .bir005-hero-animation {
-    width: 40%; 
-    height: 40%;
+    display: flex;
+    width: 38%; 
+    height: 55%;
     background-size: cover;
     position: absolute; 
     top: 0; 

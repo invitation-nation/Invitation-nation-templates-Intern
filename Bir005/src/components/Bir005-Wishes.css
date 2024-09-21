@@ -1,0 +1,105 @@
+#bir005-wishes{
+    background-image: url('../assets/img/Bir005-Wishes/wishbg.svg');
+    background-color: white;
+    background-size: 100% auto;
+    font-family: 'Hyggemand';
+    padding-bottom: 25%;
+}
+.bir005-wish-head{
+    font-family: 'Hyggemand';
+    padding:2% 5% 2% 5%;
+    color: #B55200;
+}
+.bir005-wish-head span{
+    color: #B55200;
+    font-size: 2rem;
+}
+.bir005-wish-head p{
+    font-size: 1.3rem;
+}
+#bame{
+    color: #408FBB;
+}
+.bir005-wish-coll{
+    display:flex;
+    padding: 0 5%;
+    padding-bottom: 2.5% ;
+
+}
+.bir005-wish-box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25%;
+    margin:0 1%;
+    border: 5px solid #408FBB;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.bir005-wish-box p{
+    font-size: 1em;
+    text-align: center;
+}
+.bir005-quotpic{
+    width: 15%;
+    padding: 2%;
+}
+.bir005-perpic{
+    width:20%;
+    margin: 0 auto;
+    display: block;
+}
+#b1{
+    color: #408FBB;
+    border: 5px solid #408FBB;
+}
+#b2{
+    border-color: #FF3B8D;
+    color: #FF3B8D;
+}
+#b3{
+    border-color: #474747;
+    color: #474747;
+}
+#b4{
+    color: #FF7679;
+    border-color:#FF7679;
+}
+.bir005-message{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 20%;
+}
+.bir005-message h1{
+    font-size: 1.5rem;
+    color: #B55200;
+}
+.bir005-wish-entry{
+    background-color: #FFFADD;
+    border: 5px solid #B55200;
+    width:60%;
+    border-radius:50px;
+}
+#wishname{
+    height: 3rem;
+}
+#wishdetails{
+    height: 6rem;
+}
+.bir005-submit{
+    font-family: 'sorroundsignal';
+    color: white;
+    margin: 3% 0;
+    font-size: 1.3em;
+    font-weight: 400;
+    background-color: #408FBB;
+    border: 5px solid white;
+    border-radius: 50px;
+    width: 60%;
+    height: 3em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

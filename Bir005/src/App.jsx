@@ -4,6 +4,7 @@ import Countdown from './components/Bir005-Countdown'
 import Banner from "./components/Bir005-Banner";
 import Destination from "./components/Bir005-Destination"
 import Activity from "./components/Bir005-Activity"
+import Wishes from "./components/Bir005-Wishes"
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
       <Banner></Banner>
       <Destination></Destination>
       <Activity></Activity>
+      <Wishes></Wishes>
     </div>
   )
 }
