@@ -6,6 +6,7 @@ import Destination from "./components/Bir005-Destination"
 import Activity from "./components/Bir005-Activity"
 import Wishes from "./components/Bir005-Wishes"
 import Gallery from './components/Bir005-Gallery'
+import Footer from './components/Bir005-Footer'
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
       <Activity></Activity>
       <Wishes></Wishes>
       <Gallery></Gallery>
+      <Footer></Footer>
     </div>
   )
 }
