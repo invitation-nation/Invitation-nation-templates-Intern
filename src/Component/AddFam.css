@@ -1,0 +1,178 @@
+#info-section {
+    padding: 9.6rem 0;
+    position: relative;
+    overflow-x: hidden;
+
+  }
+
+  .content {
+    overflow-x: hidden;
+  }
+  
+  .content {
+    font-family: "Mr Dafoe", cursive;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    gap: 4rem;
+  }
+  
+  .info-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+  }
+  
+  .flowers-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    z-index: -3;
+  }
+  
+  .flowers-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    z-index: -3;
+  }
+  
+  .info-decoration img,
+  .flowers-right img,
+  .flowers-left img,
+  .info-img img,
+  .leaf-1 img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .info-content-box-1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 4rem;
+  }
+  
+  .info-content-box-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 4rem;
+  }
+  
+  .info-img {
+    width: 50%;
+  }
+  
+  .info-img img {
+    mix-blend-mode: darken;
+  }
+  
+  .info-text-box {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .info-title {
+    font-family: Mr Dafoe;
+    font-size: 10rem;
+    color: #487109;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .info-subtitle {
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  
+  .info-text {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  
+  .info-location {
+    padding: 1.6rem 3.2rem;
+    color: #fff;
+    background-color: #487109;
+    text-decoration: none;
+    border-radius: 1.6rem;
+    font-size: 2rem;
+    width: fit-content;
+    text-align: center;
+  }
+  
+  .info-img {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .info-img.appear {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .info-title,
+  .info-subtitle,
+  .info-text,
+  .info-location {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .info-title.appear,
+  .info-subtitle.appear,
+  .info-text.appear,
+  .info-location.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nimbus-container {
+    max-width: 128rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  /* ********* Media queries ******** */
+  @media (width<=650px) { 
+    .info-content-box-1 {
+      flex-direction: column-reverse;
+    }
+  
+    .info-content-box-2 {
+      flex-direction: column;
+    }
+  
+    .info-img {
+      width: 100%;
+    }
+  
+    .info-text-box {
+      width: 100%;
+    }
+  }
+  
+  @media (width<=650px) {
+
+    .nimbus-container {
+        padding: 0 1.6rem;
+      }
+  
+    
+  }

@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  body {
+    font-family: "Mr Dafoe", cursive;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+  }
+
+
+  /* ******** Media Queries ********* */
+
+  @media (width<=900px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  @media (width<=650px) {
+    html {
+      font-size: 50%;
+    }
+
+}

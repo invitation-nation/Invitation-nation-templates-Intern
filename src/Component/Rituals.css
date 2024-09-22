@@ -1,0 +1,112 @@
+#rituals-section {
+    padding: 9.6rem 0;
+    background: #7a9d42;
+    overflow-x: hidden;
+
+  }
+  
+
+  .content {
+    overflow-x: hidden;
+  }
+  
+  .content {
+    font-family: "Mr Dafoe", cursive;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+  }
+  .rituals-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .rituals-element {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .rituals-img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  .rituals-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .rituals-title {
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .rituals-time {
+    font-family: Poppins;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .rituals-img {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .rituals-img.appear {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .rituals-time,
+  .rituals-title {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .rituals-time.appear,
+  .rituals-title.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nimbus-container {
+    max-width: 128rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+  
+  /* ********* Media queries ******** */
+  @media (width<=650px) {
+    #rituals-section {
+      padding: 4.8rem 0;
+    }
+  
+    .rituals-container {
+      gap: 1rem;
+    }
+  
+    .rituals-element {
+      transform: scale(0.8);
+    }
+   }
+   
+  @media (width<=650px) {
+
+    .nimbus-container {
+        padding: 0 1.6rem;
+      }
+  
+    
+  }
