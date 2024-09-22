@@ -1,0 +1,48 @@
+#bir005-Gallery{
+    background-color: #FFCC70;
+    padding: 2.5% 0;
+}
+
+.bir005-gal-head{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    margin:0 20%;
+    text-align: center;
+    color: #B55200;
+    font-family: 'Hyggemand';
+    font-size: 1.5em;
+    position: relative;
+}
+.bir005-familypic img{
+    width: 70%;
+    border: 1.5em solid #F0E6DB;
+    
+}
+.bir005-picbutton {
+    position: absolute;
+    bottom: 3%;
+    background-color: #B55200;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'sorroundsignal';
+    font-weight: 400;
+    font-size: 2rem;
+    color: #FFFADD;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width:40%;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 15px;
+    border: 3px solid #B55200;
+    height: 40px;
+
+}
+.bir005-picbutton:hover {
+    background-color: #FFFADD;
+    color: #B55200;
+}
