@@ -1,5 +1,6 @@
 import '../App.css'
 import "./bir005-Banner.css"
+import { Link } from 'react-router-dom';
 import triban from '../assets/img/Bir005-Banner/triban.svg' 
 import babupic from '../assets/img/Bir005-Banner/bannerimg.png'
 import ballon from '../assets/img/Bir005-Banner/ballon.png'
@@ -34,10 +35,12 @@ function Bir005_Banner() {
                                 celebration, as we come together to create lasting
                                 memories.
                             </p>
-                            <div id="bir005-nve" className="bir005-mapbutton">
-                                <span>SPECIAL HIGHLIGHTS</span>
-                                <img id="bir005-heartbuttn" src={heartbutton} alt="📍" />
-                            </div>
+                            <Link to='/special'>
+                                <div id="bir005-nve" className="bir005-mapbutton">
+                                    <span>SPECIAL HIGHLIGHTS</span>
+                                    <img id="bir005-heartbuttn" src={heartbutton} alt="📍" />
+                                </div>
+                            </Link>
                         </div>
                         </div>
                         <img id="bir005-lcloud" className="bir005-clouds" src={cloud} alt="" />

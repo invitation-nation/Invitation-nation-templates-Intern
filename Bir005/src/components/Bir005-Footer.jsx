@@ -1,4 +1,3 @@
-import React from 'react'
 import '../App.css'
 import './Bir005-Footer.css'
 import fcontact from '../assets/img/Bir005-Footer/footercontact.svg'
