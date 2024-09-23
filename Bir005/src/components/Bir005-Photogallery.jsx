@@ -9,6 +9,8 @@ import p5 from '../assets/img/Bir005-Photogallery/pgpic5.png'
 import p6 from '../assets/img/Bir005-Photogallery/pgpic6.png'
 import p7 from '../assets/img/Bir005-Photogallery/pgpic7.png'
 import p8 from '../assets/img/Bir005-Photogallery/pgpic8.png'
+import prev from '../assets/img/Bir005-Photogallery/prev.svg'
+import next from '../assets/img/Bir005-Photogallery/next.svg'
 const photos = [
     { src: p1, alt: 'Photo 1', info:'Ethan’s first photoshoot', date:'2.05.22' },
     { src: p2, alt: 'Photo 2', info:'Ethan’s first steps', date:'5.01.24' },
@@ -38,6 +40,7 @@ return (
             <div className='nimbus-container'>
                 <div className="bir005-photo-gallery">
                     <div className="bir005-photos">
+                    
                         {photos.slice(currentIndex, currentIndex + 4).map((photo, index) => (
                             <div key={index} className="bir005-photo-item">
                                 {index % 2 === 0 ? 
@@ -54,9 +57,16 @@ return (
                                 </div>: null}
                             </div>
                         ))}
+                        
                     </div>
-                    <button onClick={handlePrev} disabled={currentIndex === 0}>Previous</button>
-                    <button onClick={handleNext} disabled={currentIndex + 4 >= photos.length}>Next</button>
+                    <div className='bir005-buttons'>
+                        <button id='left' className='buttons' onClick={handlePrev} disabled={currentIndex === 0}>
+                            <img src={prev} alt="" />
+                        </button>
+                        <button id='right' className='buttons' onClick={handleNext} disabled={currentIndex + 4 >= photos.length}>
+                            <img src={next} alt="" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
