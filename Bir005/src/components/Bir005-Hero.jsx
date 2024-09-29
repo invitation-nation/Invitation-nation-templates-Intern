@@ -10,11 +10,12 @@ function Bir005_Hero() {
   return (
     <>
      <section id= "bir005-hero">
+     <img className="bir005-herocloud" src={hero_cloud} alt="some random cloud" />
+     <img className="bir005-heroteddy" src={hero_teddy} alt="some teddy pic" />       
+     <div className="bir005-hero-animation">
+     </div>
         <div className="nimbus-container">
         <div className='bir005-Hero'>
-        <img className="bir005-herocloud" src={hero_cloud} alt="some random cloud" />
-        <div className="bir005-hero-animation">
-        </div>
         <div className="bir005-navbar">
           <Link to="/">
             Home
@@ -39,7 +40,6 @@ function Bir005_Hero() {
           </div>
           </div>
         </div>
-            <img className="bir005-heroteddy" src={hero_teddy} alt="some teddy pic" />       
       </div>
       </section>
     </>

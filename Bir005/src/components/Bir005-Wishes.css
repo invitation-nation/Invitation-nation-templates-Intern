@@ -3,7 +3,7 @@
     background-color: white;
     background-size: 100% auto;
     font-family: 'Hyggemand';
-    padding-bottom: 25%;
+    padding-bottom: 5%;
 }
 .bir005-wish-head{
     font-family: 'Hyggemand';
@@ -12,10 +12,10 @@
 }
 .bir005-wish-head span{
     color: #B55200;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .bir005-wish-head p{
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 #bame{
     color: #408FBB;
@@ -38,7 +38,7 @@
     z-index: 2;
 }
 .bir005-wish-box p{
-    font-size: 1em;
+    font-size: 2rem;
     text-align: center;
 }
 .bir005-quotpic{
@@ -75,7 +75,7 @@
     margin: 0 20%;
 }
 .bir005-message h1{
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #B55200;
 }
 .bir005-wish-entry{
@@ -85,21 +85,21 @@
     border-radius:50px;
 }
 #wishname{
-    height: 3rem;
+    height: 6rem;
 }
 #wishdetails{
-    height: 6rem;
+    height: 9rem;
 }
 .bir005-submit{
     font-family: 'sorroundsignal';
     color: white;
     margin: 3% 0;
-    font-size: 1.3em;
+    font-size: 2rem;
     font-weight: 400;
     background-color: #408FBB;
     border: 5px solid white;
     border-radius: 50px;
     width: 60%;
-    height: 3em;
+    height: 5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }

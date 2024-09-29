@@ -6,22 +6,22 @@
     font-family: 'Hyggemand';
     color:#408FBB;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3rem;
     font-weight: 400;
     padding-bottom:0 ;
     height: fit-content;
-
+    margin-top: 2%;
+    padding-bottom: 2%;
 }
 .bir005-countbox{
     display: flex;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 100%;
+    margin-top: 3%;
     justify-content: center;
     z-index: 1;
 }
 .bir005-countcontent{
-    margin: 15px;
+    margin: 1rem;
     background-color: #FFCC70;
     color: #B55200;
     width: 15%;
@@ -32,19 +32,20 @@
 .bir005-countcontent p{
     margin: 10%;
 }
-.bir005-numb{
-    font-size: 1.6em;
+.bir005-counttitle h2{
+    font-size: 3rem;
+    font-weight: 400;
 }
 .bir005-teddyimg{
     position: absolute;
     left: 0%;
     width: 20%;
-    top: 10%;
+    bottom: 0%;
 }
 .bir005-capimg{
     position:absolute;
-    left: 69.5%;
-    top: 18%;
+    left: 73.5%;
+    top: 10%;
     width: 5%;
     transform: rotate(10deg);
 }

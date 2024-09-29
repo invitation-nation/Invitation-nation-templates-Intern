@@ -7,6 +7,8 @@ function Bir005_Destination() {
   return (
     <>
      <section id= "bir005-destination">
+     <img alt="A cute cartoon bear holding a pink balloon." className="bir005-bear-image" src={desteddy}/>
+
     <div className="nimbus-container">
     <div className="bir005-descontainer">
    <div className="bir005-image-container">
@@ -26,7 +28,6 @@ function Bir005_Destination() {
 
    </div>
   </div>
-  <img alt="A cute cartoon bear holding a pink balloon." className="bir005-bear-image" src={desteddy}/>
     </div>
     </section>
     </>

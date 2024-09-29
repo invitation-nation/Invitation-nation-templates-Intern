@@ -9,7 +9,7 @@
 
 }
 .bir005-container {
-    padding: 20px;
+    padding: 2rem;
 }
 .bir005-title {
     display: flex;
@@ -18,28 +18,20 @@
     align-items: center;
 
     color: #4A90E2;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: center;
 }
 .bir005-title span {
     margin: 0 2%;
 }
-.bir005-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5%;
-}
-.bir005-carousel .bir005-arrow {
-    font-size: 24px;
-    color: #4A90E2;
-    cursor: pointer;
-    margin: 0 20px;
-}
+
+
 .bir005-carousel .bir005-activities {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
+
 }
 .bir005-activityn {
     margin: 0 10px;
@@ -55,7 +47,7 @@
     padding: 10px;
     border-radius: 50px;
     margin-top: -20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
     z-index: 2;
 }

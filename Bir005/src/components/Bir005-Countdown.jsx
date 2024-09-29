@@ -6,6 +6,8 @@ function Bir005_Countdown() {
   return (
     <>
         <section id= "bir005-countdown">
+        <img className='bir005-teddyimg' src={shoutteddy} alt="" />
+        <img className="bir005-capimg" src={count_cap} alt="" />
         <div className="nimbus-container">
         <div className='bir005-counttitle'>
           <h2>Event will start in</h2>
@@ -27,8 +29,7 @@ function Bir005_Countdown() {
               <p>SECONDS</p>
             </div>
           </div>
-            <img className='bir005-teddyimg' src={shoutteddy} alt="" />
-            <img className="bir005-capimg" src={count_cap} alt="" />
+            
         </div>
         </div>
       </section>

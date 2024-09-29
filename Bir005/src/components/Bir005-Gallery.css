@@ -11,12 +11,15 @@
     text-align: center;
     color: #B55200;
     font-family: 'Hyggemand';
-    font-size: 1.5em;
+    font-size: 2rem;
     position: relative;
+}
+.bir005-gal-head h1{
+    margin-bottom: 1rem;
 }
 .bir005-familypic img{
     width: 70%;
-    border: 1.5em solid #F0E6DB;
+    border: 1.5rem solid #F0E6DB;
     
 }
 .bir005-picbutton {

@@ -13,10 +13,10 @@
 
 html{
   background: #FFFADD;
-  margin: 0;
-  width: 100vw;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 body{
   margin: 0;

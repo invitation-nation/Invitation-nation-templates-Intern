@@ -11,10 +11,10 @@ function Bir005_Banner() {
     return (
         <>
             <section id="bir005-banner">
+            <img className="bir005-lban" src={triban} alt="leftban" />
+            <img className="bir005-rban" src={triban} alt="rightban" />
                 <div className="nimbus-container">
                     <div className="bir005-banner">
-                        <img className="bir005-lban" src={triban} alt="leftban" />
-                        <img className="bir005-rban" src={triban} alt="rightban" />
                         <div className='bir005-banner-content'>
                         <div className="bir005-bannerpic">
                             <img id="bir005-leftballon" className="bir005-ballon" src={ballon} alt="" />
@@ -30,8 +30,6 @@ function Bir005_Banner() {
                             <p>
                                 We are thrilled to invite you to join us in celebrating this special occasion.
                                 Your presence will add joy and meaning to our
-                            </p>
-                            <p>
                                 celebration, as we come together to create lasting
                                 memories.
                             </p>
