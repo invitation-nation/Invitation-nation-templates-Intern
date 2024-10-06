@@ -16,7 +16,11 @@ function Bir005_Wishes() {
               <span>Wishes for</span><span id='bame'> ETHAN</span>
               <p>Thank you for being here and adding our joy!</p>
             </div>
-            <div className='bir005-wish-coll'>
+            
+          </div>
+        </div>
+        <div className='bir005-wishes-container'>
+        <div className='bir005-wish-coll'>
               <div id='b1' className='bir005-wish-box'>
                 <img className='bir005-quotpic' src={quotes} alt="" />
                 <p>Happy birthday to my favorite 3-year-old. Nothing makes me happier than celebrating this festive milestone with you.</p>
@@ -42,6 +46,7 @@ function Bir005_Wishes() {
                 <p>Aradhana</p>
               </div>
             </div>
+            </div>
             <div className='bir005-message'>
               <h1>Share your wishes</h1>
               <div id='wishname' className='bir005-wish-entry' ></div>
@@ -49,8 +54,7 @@ function Bir005_Wishes() {
               <div id='wishdetails' className='bir005-wish-entry'></div>
               <button className='bir005-submit'>SEND THE MESSAGE</button>
             </div>
-          </div>
-        </div>
+            
       </section>
     </>
   )

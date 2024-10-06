@@ -1,8 +1,10 @@
 #bir005-Footer{
     background-color: #408FBB;
+    padding: 9.6rem 0 0 0;
 }
 .bir005-consclo{
     display: flex;
+    position: relative;
     padding-top: 2.5%;
     width: 70%;
     margin-left:15%;
@@ -18,6 +20,11 @@
     font-family: 'Hyggemand';
 }
 .bir005-footerbear{
-    width: 15%;
-    margin:0 42.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bir005-footerbear img{
+    width: 20%;
 }

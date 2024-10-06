@@ -23,7 +23,9 @@ function Bir005_Footer() {
                 <h1>SCHEDULE</h1>
             </div>
         </div>
-        <img className='bir005-footerbear' src={fbear} alt="" />
+        <div className='bir005-footerbear'>
+        <img src={fbear} alt="" />
+        </div>
         </div>
     </section>
     </>

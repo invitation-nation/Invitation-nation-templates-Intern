@@ -1,13 +1,14 @@
 #bir005-Gallery{
     background-color: #FFCC70;
-    padding: 2.5% 0;
+    padding: 9.6rem 0;
+
 }
 
 .bir005-gal-head{
     display:flex;
     flex-direction: column;
-    width: 60%;
-    margin:0 20%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #B55200;
     font-family: 'Hyggemand';
@@ -16,6 +17,7 @@
 }
 .bir005-gal-head h1{
     margin-bottom: 1rem;
+    font-size: 3rem;
 }
 .bir005-familypic img{
     width: 70%;
@@ -23,7 +25,6 @@
     
 }
 .bir005-picbutton {
-    position: absolute;
     bottom: 3%;
     background-color: #B55200;
     border-radius: 50px;

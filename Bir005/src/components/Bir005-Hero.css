@@ -1,14 +1,12 @@
 #bir005-hero{
-    position: relative;
-    background-image: url('../assets/img/Bir005-Hero/Bir005-HeroCloud.svg');
+background-image: url('../assets/img/Bir005-Hero/Vector.png');
+background-size: cover;
+background-position: center;
+position: relative;
+padding: 0 0 9.6rem 0;
 }
-.bir005-herocloud {
-    height: 100%;
-    position: relative;
-    background-size: cover;
-    z-index: 0;
-    width: 100%;
-}
+
+
 
 .bir005-navbar {
     /* position: absolute; */
@@ -19,8 +17,6 @@
     margin: 20px;
     border-radius: 50px;
     z-index: 2;
-    width: 100%;
-   
     top: 0%;
 }
 .bir005-navbar a {
@@ -32,8 +28,8 @@
 
 .bir005-hero-animation {
     display: flex;
-    width: 41%; 
-    height: 44%;
+    width: 40%; 
+    height: 51%;
     background-size: cover;
     position: absolute; 
     top: 0; 
@@ -59,10 +55,11 @@
     z-index: 2;
     top: 30%;
 }
+
+
 .bir005-Hero{
-    position:absolute;
+    /* position:absolute; */
     display: flex;
-    width: 80%;
     flex-direction: column;
     top: 0%;
 }
@@ -83,8 +80,8 @@
     position: absolute;
     z-index: 1;
     right: 0%;
-    bottom: 0%;
-    width: 30vw;
+    bottom: 5%;
+    width: 25vw;
 }
 
 .bir005-mapbutton {
@@ -103,11 +100,12 @@
     justify-content: center;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 15px;
     border: 3px solid #B55200;
-    height: 40px;
-    padding: 1%;
-
+    
+}
+ a {
+    text-decoration: none; /* Ensure no underline */
+    color: inherit; /* Inherit color from parent */
 }
 .bir005-mapbutton:hover {
     background-color: #FFFADD;
@@ -116,4 +114,43 @@
 .bir005-mapbutton img{
     width: 10%;
     padding: 1%;
+}
+@media(max-width: 1000px){
+    .bir005-titleinfo h1{
+        font-size: 5rem;
+    }
+    .bir005-titleinfo p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:650px){
+    
+    .bir005-navbar{
+        display: none;
+    }
+    .bir005-hero-animation{
+        position: relative;
+        display: flex;
+        width: 59rem;
+        height:35rem;
+    }
+    .bir005-titleinfo{
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 3rem;
+    }
+    .bir005-heroteddy{
+        position: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+                
+    }
+}
+@media(max-width: 450px){
+    .bir005-hero-animation{
+        width: 46rem;
+        height:27rem;
+    }
 }

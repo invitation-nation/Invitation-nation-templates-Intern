@@ -1,5 +1,6 @@
 #bir005-countdown{
     position:relative;
+    padding: 9.6rem 0; 
     
 }
 .bir005-counttitle{
@@ -10,8 +11,6 @@
     font-weight: 400;
     padding-bottom:0 ;
     height: fit-content;
-    margin-top: 2%;
-    padding-bottom: 2%;
 }
 .bir005-countbox{
     display: flex;
@@ -36,6 +35,9 @@
     font-size: 3rem;
     font-weight: 400;
 }
+#bir005-last-count{
+    position: relative;
+}
 .bir005-teddyimg{
     position: absolute;
     left: 0%;
@@ -45,7 +47,20 @@
 .bir005-capimg{
     position:absolute;
     left: 73.5%;
-    top: 10%;
-    width: 5%;
+    top: -30%;
     transform: rotate(10deg);
+}
+.bir005-capimg img{
+    width: 150%;
+}
+@media(width<=650px){
+    /* .bir005-teddyimg{
+    } */
+    .bir005-countbox{
+        justify-content: space-around;
+    }
+    .bir005-countcontent{
+        width: 20%;
+        font-size: 2rem;
+    }
 }

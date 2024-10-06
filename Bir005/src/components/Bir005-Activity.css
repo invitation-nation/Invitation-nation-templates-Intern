@@ -1,7 +1,7 @@
 #bir005-activity{
     position:relative;
     font-family: 'Hyggemand';
-    margin: 5% 0;
+    padding: 9.6rem 0;
 }
 
 .bir005-act-container{
@@ -50,4 +50,22 @@
     font-size: 2rem;
     position: relative;
     z-index: 2;
+}
+@media (max-width: 900px) {
+    .bir005-activities{
+        width: max-content;
+    }
+    .bir005-carousel{
+        overflow-x: auto;
+    }
+    .bir005-description{
+        width: 100%;
+    }
+    .bir005-carousel::-webkit-scrollbar {
+        display: none;
+    }
+    .bir005-carousel {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
 }

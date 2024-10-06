@@ -6,6 +6,7 @@ import babupic from '../assets/img/Bir005-Banner/bannerimg.png'
 import ballon from '../assets/img/Bir005-Banner/ballon.png'
 import heartbutton from '../assets/img/Bir005-Banner/heartstar.png'
 import cloud from '../assets/img/Bir005-Banner/cloudreveal.png'
+import mobileflag from '../assets/img/Bir005-Banner/mobiletriflag.svg'
 
 function Bir005_Banner() {
     return (
@@ -13,6 +14,7 @@ function Bir005_Banner() {
             <section id="bir005-banner">
             <img className="bir005-lban" src={triban} alt="leftban" />
             <img className="bir005-rban" src={triban} alt="rightban" />
+            <img className="bir005-mflag" src={mobileflag} alt="mobileflag" />
                 <div className="nimbus-container">
                     <div className="bir005-banner">
                         <div className='bir005-banner-content'>
@@ -27,14 +29,14 @@ function Bir005_Banner() {
                             <p id="bir005-join">Join us to celebrate</p>
                             <h1>ETHAN&apos;S</h1>
                             <h1>3RD BIRTHDAY</h1>
-                            <p>
+                            <p id='bir005-invitedetails'>
                                 We are thrilled to invite you to join us in celebrating this special occasion.
                                 Your presence will add joy and meaning to our
                                 celebration, as we come together to create lasting
                                 memories.
                             </p>
                             <Link to='/special'>
-                                <div id="bir005-nve" className="bir005-mapbutton">
+                                <div className="bir005-mapbutton">
                                     <span>SPECIAL HIGHLIGHTS</span>
                                     <img id="bir005-heartbuttn" src={heartbutton} alt="📍" />
                                 </div>

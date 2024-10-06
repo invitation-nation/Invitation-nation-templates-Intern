@@ -1,6 +1,8 @@
 #bir005-banner{
     position: relative;
     background-color: #FFCC70;
+    padding: 9.6rem 0,3.6rem 0 ;
+    
 }
 .bir005-banner{
 
@@ -11,6 +13,7 @@
     position: absolute;
     width: 30%;
     left: -1%;
+    top:0;
     transform: scaleX(-1);
     z-index: 2;
 
@@ -18,8 +21,14 @@
 .bir005-rban{
     position: absolute;
     width:30%;
-    right:0%;
+    top:0;
+
+    right:-1%;
     z-index: 2;
+}
+
+.bir005-mflag{
+    display: none;
 }
 .bir005-banner-content{
     display: flex;
@@ -48,14 +57,15 @@
     bottom: 0%;
 }
 .bir005-invite{
+    display: flex;
+    flex-direction: column;
     font-family: 'Hyggemand',sans-serif;
     color: #408FBB;
     z-index: 1;
-    width: 80%;
+    width: 100%;
     text-align: center;
     position: relative;
     top: 3rem;
-    background-color: #FFCC70;
     padding-bottom:5% ;    
 }
 .bir005-invite p{
@@ -67,6 +77,9 @@
     font-size: 50px;
     margin: 0;
 }
+#bir005-invitedetails{
+    padding: 0 10%;
+}
 
 .bir005-clouds{
     width: 70%;
@@ -77,10 +90,10 @@
 
 }
 #bir005-lcloud{
-    left: 10%;
+    left: 0%;
 }
 #bir005-rcloud{
-    right: 10%;
+    right: 0%;
 }
 
 @keyframes fadeIn {
@@ -124,4 +137,37 @@
 
 #bir005-rcloud {
     animation: cloudMover 2s ease-in-out forwards;
+}
+@media (width<=650px) {
+    #bir005-invitedetails {
+        display: none;
+    }
+    .bir005-clouds{
+        width: 140%;
+    }
+    .bir005-rban{
+        display: none;
+    }
+    .bir005-lban{
+        display: none;
+    }
+    .bir005-mflag{
+        display: block;
+        width: 100%;
+    }
+    .bir005-babypic{
+    width: 90%;
+    }
+    .bir005-ballon{
+        width: 20%;
+    }
+    #bir005-rightballon{
+        bottom: -20%;
+    }
+    #bir005-leftballon{
+        bottom: -20%;
+    }
+    .bir005-invite p{
+        padding: 2% 0 0 0;
+    }
 }

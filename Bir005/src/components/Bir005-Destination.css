@@ -1,6 +1,6 @@
 #bir005-destination{
     position: relative;
-    margin: 5% 0;
+    padding: 9.6rem 0;
 }
 .bir005-container {
     display: flex;
@@ -83,4 +83,12 @@
 .bir005-mapbuttond:hover {
     background-color: #FFFADD;
     color: #B55200;
+}
+@media(max-width:650px){
+    .bir005-descontainer{
+        flex-direction: column-reverse;
+    }
+    .bir005-bear-image{
+        display: none;
+    }
 }

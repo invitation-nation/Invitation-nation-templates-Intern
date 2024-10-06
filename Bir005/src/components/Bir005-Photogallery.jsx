@@ -36,8 +36,7 @@ function Bir005_Photogallery() {
 
 return (
     <>
-        <section id='bir005-photogallery'>
-            <div className='nimbus-container'>
+        <section id='bir005-photogallery'>           
                 <div className="bir005-photo-gallery">
                     <div className="bir005-photos">
                     
@@ -68,7 +67,6 @@ return (
                         </button>
                     </div>
                 </div>
-            </div>
         </section>
     </>
 );

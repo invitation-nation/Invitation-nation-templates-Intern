@@ -61,3 +61,12 @@
     right: 0%;
     justify-content: flex-end;
 }
+@media (width<=650px){
+    .buttons img{
+        width: 30%;
+    }
+    .bir005-photo-item{
+        width: 50%;
+        height: 50%;
+    }
+}

@@ -11,7 +11,7 @@ function Bir005_Gallery() {
             <div className='bir005-familypic'>
               <img src={family} alt="" />
               <div className="bir005-picbutton">
-                <span>OPEN IN MAPS</span>
+                <span>FAMILY PHOTOS</span>
               </div>
             </div>
           </div>

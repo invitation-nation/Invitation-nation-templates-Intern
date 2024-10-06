@@ -20,3 +20,9 @@
     margin: 0 5%;
     font-size: 1.5rem;
 }
+
+@media(width<=650px){
+    .bir005-navbars{
+        display: none;
+    }
+}
