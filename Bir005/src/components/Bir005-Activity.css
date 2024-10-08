@@ -16,10 +16,16 @@
     font-size: 3rem;
     justify-content: center;
     align-items: center;
-
     color: #4A90E2;
     margin-bottom: 2rem;
     text-align: center;
+   
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 .bir005-title span {
     margin: 0 2%;

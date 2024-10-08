@@ -66,7 +66,9 @@
     text-align: center;
     position: relative;
     top: 3rem;
-    padding-bottom:5% ;    
+    padding-bottom:5% ; 
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s;   
 }
 .bir005-invite p{
     color: #B55200;
@@ -87,22 +89,13 @@
     transition: transform 0.5s ease;
     z-index: 2;
     top: 50%;
-
 }
+
 #bir005-lcloud{
     left: 0%;
 }
 #bir005-rcloud{
     right: 0%;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 @keyframes cloudMovel {
@@ -122,22 +115,14 @@
     }
 }
 
-.bir005-invite {
-    animation: none;
-}
-
-.bir005-invite.active {
-    animation: fadeIn 1s forwards;
-    animation-iteration-count: 1;
-}
-
-#bir005-lcloud {
+.bir005-clouds:hover #bir005-lcloud {
     animation: cloudMovel 2s ease-in-out forwards;
 }
 
-#bir005-rcloud {
+.bir005-clouds:hover #bir005-rcloud {
     animation: cloudMover 2s ease-in-out forwards;
 }
+
 @media (width<=650px) {
     #bir005-invitedetails {
         display: none;

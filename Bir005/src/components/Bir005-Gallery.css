@@ -12,18 +12,39 @@
     text-align: center;
     color: #B55200;
     font-family: 'Hyggemand';
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 3%;
     position: relative;
 }
-.bir005-gal-head h1{
-    margin-bottom: 1rem;
-    font-size: 3rem;
+.bir005-familypic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .bir005-familypic img{
     width: 70%;
     border: 1.5rem solid #F0E6DB;
     
 }
+.bir005-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    overflow: hidden;
+      
+  }
+  
+  .bir005-gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .bir005-gallery-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
 .bir005-picbutton {
     bottom: 3%;
     background-color: #B55200;
