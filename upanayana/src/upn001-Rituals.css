@@ -1,0 +1,129 @@
+
+#upn001-rituals-section {
+    padding: 9.6rem 0;
+    position: relative;
+    background: #ffd2a6;
+    overflow: hidden;
+  }
+  
+  .upn001-rituals-container {
+   
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upn001-rituals-decoration-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    max-width: 20%;
+    z-index: 2;
+  }
+  
+  .upn001-rituals-decoration-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 20%;
+    z-index: 0;
+  }
+  
+  .upn001-rituals-leaf  {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .upn001-rituals-decoration-left img,
+  .upn001-rituals-decoration-right img,
+  .upn001-rituals-leaf img,
+  .upn001-rituals-leaf-mobile img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
+  .upn001-rituals-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    max-width: 28%;
+  }
+  
+  .upn001-rituals-text-container p {
+    font-family: Lexend Exa;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color:#382500;
+  }
+  
+  .upn001-rituals-btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2.4rem;
+    background: #983b14;
+    color: #fff;
+    border-radius: 1.6rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+
+  .upn001-rituals-leaf-mobile img{
+    display: none;
+  }
+
+  @media (width<=1500px) {
+    .upn001-rituals-text-container {
+      max-width: 38%;
+    }
+  
+  
+    .upn001-rituals-text-container p {
+      font-size: 2.4rem;
+    }
+  }
+  @media (width<=1000px){
+    .upn001-rituals-text-container p{
+      font-size: 1.9rem;
+    }
+  }
+
+  @media (width<=900px){
+    .upn001-rituals-text-container p{
+      font-size: 1.9rem;
+    }
+  }
+
+ 
+
+      @media (width<=650px) {
+      .upn001-rituals-text-container {
+        top: 55%;
+        width: 50%;
+      }
+      .upn001-rituals-text-container p{
+        font-size: 1.9rem;
+      }
+     
+    
+      .upn001-rituals-leaf-mobile img {
+        display: flex;
+        width: 75%;
+      position: relative;
+        z-index: 1;
+        margin: 0 12.4% ;
+    }
+     .upn001-rituals-leaf img{
+      display: none;
+    } 
+
+    }

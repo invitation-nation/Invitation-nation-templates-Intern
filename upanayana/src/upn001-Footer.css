@@ -1,0 +1,34 @@
+#upn001-footer-section {
+  padding: 4rem 0;
+  
+}
+
+.upn001-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upn001-footer-text-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.upn001-footer-text-box span {
+  font-size: 2rem;
+  font-family: Poppins;
+}
+
+.upn001-footer-text-box a {
+  font-size: 2rem;
+  font-family: Poppins;
+  text-decoration: none;
+  color: #983b14;
+}
+@media (width<=650px) {
+  .upn001-footer-text-box {
+    flex-direction: column;
+  }}

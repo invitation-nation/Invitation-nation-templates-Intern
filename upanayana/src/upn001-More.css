@@ -1,0 +1,534 @@
+.upn001-rituals-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    padding-left: 1.3%;
+    width:85%;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    gap: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 4;
+    backdrop-filter: blur(2px);
+  }
+  
+  .upn001-rituals-box-mobile {
+    display: none;
+  }
+  .upn001-ritual-page-1,
+  .upn001-ritual-page-2,
+  .upn001-ritual-page-3,
+  .upn001-ritual-page-4,
+  .upn001-ritual-page-5,
+  .upn001-ritual-page-6,
+  .upn001-ritual-page-7,
+  .upn001-ritual-page-8,
+  .upn001-ritual-page-9,
+  .upn001-ritual-page-10 {
+    width: 100%;
+    position: relative;
+    margin-top: 1.5%;
+    z-index: 2;
+   
+  }
+  
+  .upn001-ritual-element-1 {
+    transform: rotate(1deg);
+  }
+  
+  .upn001-ritual-element-2 {
+    transform: rotate(-0.5deg);
+  }
+  
+  .upn001-ritual-element-3 {
+    transform: rotate(-1deg);
+  }
+  
+  .upn001-ritual-leaf {
+    width: 100%;
+  }
+  
+  .upn001-ritual-leaf img {
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .upn001-ritual-heading {
+    color: #382500;
+    font-family: Lexend Exa;
+    width: 100%;
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .upn001-leaf-thread-1 {
+    position: absolute;
+    width: 11rem;
+    height: 15rem;
+    bottom: -9rem;
+    left: 25%;
+    z-index: 2;
+    transform: rotate(17deg);
+  }
+  
+  .upn001-leaf-thread-2 {
+    position: absolute;
+    width: 11rem;
+    height: 15rem;
+    bottom: -9rem;
+    right: 25%;
+    z-index: 2;
+    transform: rotate(-12deg);
+  }
+  
+  .upn001-leaf-thread-3 {
+    position: absolute;
+    width: 11rem;
+    height: 15rem;
+    bottom: -9rem;
+    left: 25%;
+    z-index: 2;
+    transform: rotate(-15deg);
+  }
+  
+  .upn001-leaf-thread-4 {
+    position: absolute;
+    width: 11rem;
+    height: 15rem;
+    bottom: -9rem;
+    right: 25%;
+    z-index: 2;
+    transform: rotate(15deg);
+  }
+  
+  .upn001-leaf-thread-1 img,
+  .upn001-leaf-thread-2 img,
+  .upn001-leaf-thread-3 img,
+  .upn001-leaf-thread-4 img {
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  
+  
+  .upn001-ritual-page-title {
+    font-family: Lexend Exa;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: #382500;
+    letter-spacing: -2px;
+    
+    padding-top: 5%;
+  }
+  
+  .upn001-ritual-page-img {
+    width: 65%;
+    position: relative;
+    background-image: url(./assets/upn001-about-section/leaf.svg);
+    background-position: center;
+    z-index: -2;
+    box-shadow: inset rgba(0, 0, 0, 0.16) 0px 0px 4px, inset rgba(51, 51, 51, 0.5) 0px 0px 4px 3px;
+  
+  }
+  .upn001-ritual-page-img img {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: darken;
+}
+ 
+  
+  .upn001-ritual-page-text {
+    font-family: Lexend Exa;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #382500;
+    line-height: 1.25;
+    padding-top: 5%;
+  }
+  
+  .upn001-ritual-page-box-last {
+    position: relative;
+    bottom: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upn001-ritual-page-box-last .button {
+    border-radius: 16px;
+    color: #ffffff;
+    background: #983b14;
+    text-decoration: none;
+    padding: 1rem 2.4rem 1rem 2.4rem;
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-align: center;
+    
+
+  
+  }
+  
+  @media (width<=1200px) {
+    .upn001-leaf-thread-1,
+    .upn001-leaf-thread-2,
+    .upn001-leaf-thread-3,
+    .upn001-leaf-thread-4 {
+      width: 10rem;
+      height: 12.5rem;
+      bottom: -8rem;
+    }
+  }
+  
+  @media (width<=1100px) {
+    .upn001-leaf-thread-1,
+    .upn001-leaf-thread-2,
+    .upn001-leaf-thread-3,
+    .upn001-leaf-thread-4 {
+      width: 9.5rem;
+      height: 12rem;
+      bottom: -7.5rem;
+    }
+  
+    .upn001-ritual-page-title {
+      font-size: 2.8rem;
+    }
+  }
+  
+  @media (width<=1000px) {
+    .upn001-leaf-thread-1,
+    .upn001-leaf-thread-2,
+    .upn001-leaf-thread-3,
+    .upn001-leaf-thread-4 {
+      width: 9rem;
+      height: 11.5rem;
+      bottom: -7rem;
+    }
+    .upn001-ritual-page-title {
+      font-size: 2.4rem;
+    }
+    .upn001-ritual-heading{
+      font-size: 2.4rem;
+    }
+    .upn001-ritual-page-text {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (width<=900px) {
+    .upn001-ritual-page-title {
+      font-size: 2.4rem;
+    }
+    .upn001-ritual-heading{
+      font-size: 2.2rem;
+    }
+  
+    .upn001-ritual-page-text {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (width<=700px) {
+    .upn001-ritual-page-title {
+      font-size: 2rem;
+    }
+    .upn001-ritual-heading{
+      font-size: 2rem;
+    }
+    .upn001-ritual-page-text {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (width<=650px) {
+    /* .upn001-hero-title {
+      font-size: 3.2rem;
+      letter-spacing: -2px;
+    }
+   
+  
+    .upn001-ritual-heading {
+      width: 90%;
+      font-size: 1.6rem;
+      letter-spacing: -2px;
+    }
+
+    .upn001-ritual-page-box-last .button {
+      font-size: 1.3rem;
+      margin-left: 20%;
+    }
+
+    .upn001-hero-container{
+      width:10%;
+    }
+  
+    .upn001-ritual-page-box-last{
+      font-size: 1.5;
+    }
+    
+    .upn001-rituals-box-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .upn001-ritual-page-title {
+      font-size: 2rem;
+    } */
+  
+   
+    .upn001-ritual-page-box-last{
+      bottom:35rem;
+    }
+    
+    .upn001-ritual-page-img{
+      width:75%;
+    }
+  
+    .upn001-ritual-page-box {
+      width: 90%;
+      height: 90%;
+      
+    }
+  }
+    #mobileleaf{
+      display:none;
+    }
+
+  #upn001-hero-section {
+    padding: 9.6rem 0 ;
+  }
+  
+  .upn001-hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width:100vw;
+  }
+  
+  .upn001-hero-title {
+    font-family: Lexend Exa;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: #c5784a;
+    width: 95%;
+  }
+
+
+  .upn001-hero-btn {
+    font-family: Lexend Exa;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .upn001-main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .upn001-main-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .upn001-main-nav-link {
+    font-family: Lexend Exa;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .upn001-main-nav {
+    padding: 0 3.2rem;
+  }
+  
+  .upn001-main-nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-family: ExcludedItalic;
+  }
+  
+  .upn001-main-nav-link {
+    text-decoration: none;
+    padding: 0.8rem 0;
+    margin-right: 1.6rem;
+    color: #000;
+    font-family: Lexend Exa;
+    font-size: 2.4rem;
+  }
+ 
+   
+
+    .upn001-ritual-page-box{
+      padding-top: 0%;
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      margin-top: 5%;
+    }
+
+    .upn001-ritual-page-box {
+      position: absolute;
+      width: 90%;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 1fr;
+   
+      justify-items: center;
+      align-items: center;
+  }
+
+
+   
+    
+
+    
+
+
+    .upn001-leaf{
+      margin-top: 1.5%;
+      transform: rotate(.4deg);
+    }
+    .upn001-ritual-page-1{
+      transform: rotate(.4deg);
+    }
+    .tilt-left {
+      transform: rotate(-.3deg);
+      /* z-index: 2; */
+    }
+    
+    .tilt-right {
+      transform: rotate(.3deg);
+     
+    }
+
+    @media (width<=900px) {
+      .ritual-page-title {
+        font-size: 2.4rem;
+      }
+      .upn001-ritual-page-box-last .button{
+        bottom:
+      }
+      .ritual-page-text {
+        font-size: 2rem;
+      }
+    }
+    @media (width<=650px) {
+      /* .upn001-rituals-leaf-mobile img {
+        display: flex;
+        width: 80%;
+        margin-left: 25%;
+    }
+    .upn001-ritual-leaf img{
+      display:none;
+    }
+    .upn001-hero-title {
+      width: 40rem;
+      margin-left: 140%;
+      font-size: 2.5rem;
+  }
+  
+    
+    .upn001-ritual-heading {
+      width: 21%;
+      font-size: 2.6rem;
+      letter-spacing: -2px;
+      margin-left: 9%;
+      top:60%;
+  }
+  .upn001-rituals-leaf-mobile img {
+    display: flex;
+    width: 35%;
+    margin-left: 60%;
+  }
+    
+      .upn001-rituals-leaf-mobile {
+        display: inline-block;
+        width: 75%;
+      } */
+      #pcleaf{
+        display:none;
+      }
+      .rituals-box-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+  
+      .upn001-hero-title {
+        font-size: 3.2rem;
+        letter-spacing: -2px;
+      }
+    
+      .upn001-ritual-heading {
+        width: 90%;
+        font-size: 3.2rem;
+        letter-spacing: -2px;
+      }
+    
+      .upn001-ritual-page-text {
+        font-size: 2rem;
+        width: 100%;
+          margin-left: 3%;
+      }
+    
+      #mobileleaf {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+      }
+    
+      .upn001-ritual-page-title {
+        font-size: 4rem;
+      }
+    
+      .upn001-ritual-page-text {
+        font-size: 2rem;
+      }
+    
+      .upn001-ritual-page-box {
+        width: 90%;
+        height: 90%;
+        top:35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+   
