@@ -442,7 +442,8 @@
         font-size: 2.4rem;
       }
       .upn001-ritual-page-box-last .button{
-        bottom:
+        bottom:-10rem;
+        position: relative;
       }
       .ritual-page-text {
         font-size: 2rem;
