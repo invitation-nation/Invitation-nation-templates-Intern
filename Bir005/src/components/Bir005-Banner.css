@@ -89,6 +89,7 @@
     transition: transform 0.5s ease;
     z-index: 2;
     top: 50%;
+
 }
 
 #bir005-lcloud{
@@ -97,31 +98,42 @@
 #bir005-rcloud{
     right: 0%;
 }
-
-@keyframes cloudMovel {
+@keyframes cloudMoveLeft {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-80%);
+        transform: translateX(-100%);
     }
 }
-@keyframes cloudMover {
+
+@keyframes cloudMoveRight {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(80%);
+        transform: translateX(100%);
     }
 }
 
-.bir005-clouds:hover #bir005-lcloud {
-    animation: cloudMovel 2s ease-in-out forwards;
+#bir005-lcloud.animate-left {
+    animation: cloudMoveLeft 2s ease-in-out forwards;
 }
 
-.bir005-clouds:hover #bir005-rcloud {
-    animation: cloudMover 2s ease-in-out forwards;
+#bir005-rcloud.animate-right {
+    animation: cloudMoveRight 2s ease-in-out forwards;
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 
 @media (width<=650px) {
     #bir005-invitedetails {

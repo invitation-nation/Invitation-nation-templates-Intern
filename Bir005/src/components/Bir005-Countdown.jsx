@@ -25,8 +25,9 @@ function Bir005_Countdown() {
               <p>MINUTES</p>
             </div>
             <div id='bir005-last-count' className="bir005-countcontent">
-            <div className="bir005-capimg"><img  src={count_cap} alt="" />
-            </div>
+            {/* <div className="bir005-capimg"> */}
+              <img id='bir005-capimg' src={count_cap} alt="" />
+            {/* </div> */}
               <p className="bir005-numb">00</p>
               <p>SECONDS</p>
               

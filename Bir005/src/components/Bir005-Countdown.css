@@ -44,15 +44,14 @@
     width: 20%;
     bottom: 0%;
 }
-.bir005-capimg{
+#bir005-capimg{
     position:absolute;
     left: 73.5%;
-    top: -30%;
+    top: -35%;
     transform: rotate(10deg);
-}
-.bir005-capimg img{
     width: 150%;
 }
+
 @media(width<=650px){
     /* .bir005-teddyimg{
     } */
