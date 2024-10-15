@@ -50,7 +50,12 @@
 
 .buttons img{
     width: 10%;
+    opacity: 0.8; /* Initial opacity */
+    transition: opacity 0.5s ease; /* Smooth transition */
 }
+.buttons img.opaque {
+    opacity: 1; /* Fully opaque */
+  }
 #left{
     display: flex;
     left:0%;
@@ -68,5 +73,11 @@
     .bir005-photo-item{
         width: 50%;
         height: 50%;
+    }
+    .bir005-photo-gallery{
+        margin-top: 10%;
+    }
+    .bir005-photos{
+    width: 300%;
     }
 }

@@ -47,7 +47,7 @@
     width: 70%;
     border-radius: 50%;
 }
-.bir005-activityn .bir005-description {
+ .bir005-description {
     background: var(--gold-glow, radial-gradient(51.2% 49.57% at 46.32% 54.81%, #F7C979 0.56%, #F7C36E 19.04%, #F7B352 51.1%, #F79824 92.66%, #F7941D 98.88%));    color: white;
     border: 6px solid var(--Deep-Brown, #B55200);
     padding: 10px;
@@ -73,5 +73,16 @@
     .bir005-carousel {
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
         scrollbar-width: none;  /* Firefox */
+    }
+}
+@media(width<=650px){
+    .bir005-description{
+        font-size: 1.5rem;
+        border: 3px solid var(--Deep-Brown, #B55200);
+        margin-top: -10px;
+        padding: 5px;
+    }
+    .bir005-title{
+        font-size: 2.5rem;
     }
 }

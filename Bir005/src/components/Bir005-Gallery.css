@@ -71,3 +71,9 @@
     background-color: #FFFADD;
     color: #B55200;
 }
+@media(width<=650px){
+    .bir005-familypic img{
+        width: 80%;
+    }
+
+}

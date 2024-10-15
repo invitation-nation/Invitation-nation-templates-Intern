@@ -33,6 +33,13 @@ function Bir005_Photogallery() {
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 4 + photos.length) % photos.length);
   };
+  const handleClick = (event) => {
+    const img = event.target;
+    img.classList.add('opaque');
+    setTimeout(() => {
+      img.classList.remove('opaque');
+    }, 500); // Duration of the transition in milliseconds
+  };
 
 return (
     <>
@@ -60,10 +67,10 @@ return (
                     </div>
                     <div className='bir005-buttons'>
                         <button id='left' className='buttons' onClick={handlePrev} disabled={currentIndex === 0}>
-                            <img src={prev} alt="" />
+                            <img src={prev} alt="" onClick={handleClick}/>
                         </button>
                         <button id='right' className='buttons' onClick={handleNext} disabled={currentIndex + 4 >= photos.length}>
-                            <img src={next} alt="" />
+                            <img src={next} alt="" onClick={handleClick}/>
                         </button>
                     </div>
                 </div>
