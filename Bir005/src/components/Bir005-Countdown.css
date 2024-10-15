@@ -49,7 +49,7 @@
     left: 73.5%;
     top: -35%;
     transform: rotate(10deg);
-    width: 150%;
+    width: 50%;
 }
 
 @media(width<=650px){

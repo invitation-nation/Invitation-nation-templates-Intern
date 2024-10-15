@@ -32,7 +32,7 @@
 }
 
 
-.bir005-carousel .bir005-activities {
+.bir005-activities {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@
 }
 @media (max-width: 900px) {
     .bir005-activities{
-        width: max-content;
+        width: 200%;
     }
     .bir005-carousel{
         overflow-x: auto;
