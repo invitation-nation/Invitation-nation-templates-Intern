@@ -19,6 +19,22 @@ export default function Preloader() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Disable vertical scrolling
+    document.documentElement.style.overflowY = 'hidden';
+
+    // Set a timer to enable scrolling after 2 seconds
+    const timer = setTimeout(() => {
+        document.documentElement.style.overflowY = 'auto';
+    }, 4000); // 2 seconds
+
+    // Cleanup function to reset the overflow when the component unmounts
+    return () => {
+        clearTimeout(timer);
+        document.documentElement.style.overflowY = 'auto'; // Reset to auto if component unmounts early
+    };
+}, []);
+
   return (
     <>
       {loading && (
