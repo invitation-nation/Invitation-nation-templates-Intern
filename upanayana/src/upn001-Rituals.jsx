@@ -4,7 +4,7 @@ import rsr from './assets/upn001-ritual-section/ritual-section-right.svg'
 import rl from './assets/upn001-ritual-section/rituals-leaf.svg'
 import rlm from './assets/upn001-ritual-section/ritual-leaf-mobile.svg'
 import './upn001-Rituals.css'
-/*import { Link } from 'react-router-dom'*/
+
 
 function Rituals() {
   

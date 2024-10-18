@@ -64,11 +64,11 @@ const rituals = [
 ];
 
 function RitualLeaf({ ritual, index }) {
-  // Determine if the index is odd or even for alternate tilting
+ 
   const isEven = index % 2 === 0;
   const tiltClass = isEven ? 'tilt-left' : 'tilt-right';
 
-  // Alternate between the thread classes
+
   const threadClass1 = isEven ? 'upn001-leaf-thread-1' : 'upn001-leaf-thread-3';
   const threadClass2 = isEven ? 'upn001-leaf-thread-2' : 'upn001-leaf-thread-4';
 
@@ -88,7 +88,7 @@ function RitualLeaf({ ritual, index }) {
           </div>
           <p className="upn001-ritual-page-text">{ritual.text}</p>
         </div>
-        {/* Apply alternate thread classes */}
+       
         <div className='upn001-leaf-thread'>
         <div className={threadClass1}>
           <img src={lfh} alt="" />
@@ -144,7 +144,7 @@ function More() {
                 </div>
                 </div>
               </div>
-              {/* Map through the rituals and pass the index */}
+             
               {rituals.map((ritual, index) => (
                 <RitualLeaf key={index} ritual={ritual} index={index} />
               ))}

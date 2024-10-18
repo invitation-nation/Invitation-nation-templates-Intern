@@ -10,50 +10,50 @@ function Navbar() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay
+    
     const timer = setTimeout(() => {
-      setLoading(false); // Hide preloader after delay
-    }, 2000); // Adjust the delay as needed
+      setLoading(false); 
+    }, 2000); 
 
-    // Cleanup the timer if component unmounts
+   
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       {loading && (
-        <div id="preloader">
-          {/* Preloader content */}
+        <div id="upn001-preloader">
+          
           <div className="spinner">Loading...</div>
         </div>
       )}
 
       {!loading && (
-        <div id="content">
+        <div id="upn001-content">
           <section id="hero-section">
-          <div className="hero-background-decoration">
+          <div className="upn001-hero-background-decoration">
                   <img src={decoration} alt="Background Decoration" />
                 </div>
-            <div className="nimbus-container">
-              <div className="hero-container">
+            <div className="upn001-nimbus-container">
+              <div className="upn001-hero-container">
                
-                <div className="hero-bg-img">
+                <div className="upn001-hero-bg-img">
                   <img src={herobg} alt="Hero Background" />
                 </div>
-                <div className="hero-text-box">
-                  <div className="hero-text-box-img">
+                <div className="upn001-hero-text-box">
+                  <div className="upn001-hero-text-box-img">
                     <img src={om} alt="Om Image" />
                   </div>
                   <span>Amogha’s</span>
                   <h2>UPANAYANA</h2>
-                  <div className="hero-img">
+                  <div className="upn001-hero-img">
                     <img src={hero} alt="Hero Image" />
                   </div>
                 </div>
                 
               </div>
             </div>
-            <div className="hero-bottom-decoration">
+            <div className="upn001-hero-bottom-decoration">
                   <img src={hbd} alt="Bottom Decoration" />
                 </div>
           </section>

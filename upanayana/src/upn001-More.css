@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    gap: auto;
+    left:1%;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -8,9 +8,6 @@ import Info from './upn001-Info'
 import Rituals from './upn001-Rituals'
 import Contact from './upn001-Contact'
 import Gallery from './upn001-Gallery'
-
-/*import gif from './img/hero-section/upanayana-preloader.gif'*/
-import More from './upn001-More'
 import Footer from './upn001-Footer'
 
  
