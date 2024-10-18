@@ -1,7 +1,8 @@
 import "../App.css"
 import { Link } from 'react-router-dom';
 import "./bir005-hero.css";
-import hero_teddy from '../assets/img/Bir005-Hero/Teddy1.svg'
+import teddyhead from '../assets/img/Bir005-Hero/teddyhead.svg'
+import teddybody from '../assets/img/Bir005-Hero/teddybody.svg'
 import location_button from '../assets/img/Location.png'
 // import Mapbutton from './bir005-Mapbutton';
 
@@ -14,9 +15,9 @@ function Bir005_Hero() {
           <div className='bir005-Hero'>
             <div className="bir005-navbar">
               <Link to="/">Home</Link>
-              <Link to="/">About</Link>
-              <Link to="/">Gallery</Link>
-              <Link to="/">Schedule</Link>
+              <a href="#bir005-banner">About</a>
+              <a href="#bir005-Gallery">Gallery</a>
+              <a href="#bir005-activity">Schedule</a>
             </div>
             <div className="bir005-titleinfo">
               <p>Please join us to celebrate</p>
@@ -29,7 +30,11 @@ function Bir005_Hero() {
             </div>
           </div>
         </div>
-        <img className="bir005-heroteddy"  src={hero_teddy} alt="some teddy pic" />
+        <div className="bir005-heroteddy">
+        <img id="head" src={teddyhead} alt="some teddy pic" />
+        <img id="body" src={teddybody} alt="" />
+        </div>
+        
       </section>
     </>
   )

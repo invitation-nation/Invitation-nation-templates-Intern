@@ -11,18 +11,10 @@ function Bir005_special() {
     <section id='bir005-special'>
       <Mobnav></Mobnav>
             <div className="bir005-navbars">
-            <Link to="/">
-                Home
-            </Link>
-            <Link to="/">
-                About
-            </Link>
-            <Link to="/">
-                Gallery
-            </Link>
-            <Link to="/">
-                Schedule
-            </Link>
+              <Link to="/">Home</Link>
+              <a href="#bir005-banner">About</a>
+              <a href="#bir005-Gallery">Gallery</a>
+              <a href="#bir005-activity">Schedule</a>
             </div>
             <PhotoGallery />
             <Footer></Footer>

@@ -27,9 +27,10 @@ padding: 0 0 9.6rem 0;
 }
 
 .bir005-hero-animation {
-    display: flex;
-    width: 40%; 
-    height: 51%;
+    /* width: 40%; 
+    height: 51%; */
+    width: 45rem; 
+    height: 26rem;
     background-size: cover;
     position: absolute; 
     top: 0; 
@@ -81,7 +82,32 @@ padding: 0 0 9.6rem 0;
     z-index: 1;
     right: 0%;
     bottom: 5%;
-    width: 25vw;
+    width: 25%;
+}
+
+#head {
+    position: absolute;
+    top: -84%;
+    left: -17%;
+    transform-origin:center;
+    animation: rotateHead 3s infinite alternate;
+    width: 80%;
+}
+
+#body {
+    position: relative;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+@keyframes rotateHead {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
 }
 
 .bir005-mapbutton {
@@ -115,6 +141,58 @@ padding: 0 0 9.6rem 0;
     width: 10%;
     padding: 1%;
 }
+
+
+
+@media(width>=1400px){
+    .bir005-hero-animation {
+        width: 58rem;
+        height: 33rem;
+    }
+    .bir005-heroteddy{
+        width: 22.5%;
+    } 
+}
+
+@media(width>=1600px){
+    
+    .bir005-heroteddy{
+        width: 20%;
+    } 
+}
+
+@media(width>=1800px){
+    .bir005-heroteddy{
+        width: 20%;
+    }
+    #bir005-hero{
+        padding: 0 0 15rem 0;
+    } 
+
+}
+
+@media(width>=2000px){
+    .bir005-hero-animation {
+        width: 74rem;
+        height: 44rem;
+    }
+
+    .bir005-heroteddy{
+        width: 20%;
+    }
+    #bir005-hero{
+        padding: 0 0 25rem 0;
+    } 
+
+}
+
+@media(width>=2000px){
+  
+    #bir005-hero{
+        padding: 0 0 35rem 0;
+    } 
+
+}
 @media(max-width: 1000px){
     .bir005-titleinfo h1{
         font-size: 5rem;
@@ -140,12 +218,27 @@ padding: 0 0 9.6rem 0;
         font-size: 3rem;
     }
     .bir005-heroteddy{
-        position: initial;
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
                 
+    }
+    #body{
+        left: 0;
+        margin-top: 40%;
+        transform: none;
+        width: 60%;
+
+    }
+    #head{
+
+        position: absolute;
+        width: 45%;
+        top: -4%;
+        left: 24%;
+
     }
 }
 @media(max-width: 450px){
@@ -154,3 +247,4 @@ padding: 0 0 9.6rem 0;
         height:27rem;
     }
 }
+

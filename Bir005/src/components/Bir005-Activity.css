@@ -57,9 +57,9 @@
     position: relative;
     z-index: 2;
 }
-@media (max-width: 900px) {
+@media (max-width: 650px) {
     .bir005-activities{
-        width: 200%;
+        width: 275%;
     }
     .bir005-carousel{
         overflow-x: auto;

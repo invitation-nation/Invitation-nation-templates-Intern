@@ -46,10 +46,10 @@
 }
 #bir005-capimg{
     position:absolute;
-    left: 73.5%;
+    left: 78.5%;
     top: -35%;
     transform: rotate(10deg);
-    width: 50%;
+    width: 40%;
 }
 
 @media(width<=650px){
