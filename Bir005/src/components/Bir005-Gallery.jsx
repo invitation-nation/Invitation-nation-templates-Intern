@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../App.css'
+import { Link } from 'react-router-dom';
 import './Bir005-Gallery.css'
 import family from '../assets/img/Bir005-Gallery/family.png'
 import group from '../assets/img/Bir005-Gallery/groupphotos.png'
@@ -33,9 +34,11 @@ function Bir005_Gallery() {
           <div key={index} className="bir005-gallery-slide">
             <div className='bir005-familypic'>
               <img src={photo.src} alt={`Family ${index + 1}`} />
-              <div className="bir005-picbutton">
+              <Link to="/" className="bir005-picbutton">
+              <div >
                 <span>{photo.text}</span>
               </div>
+              </Link>
             </div>
           </div>
         ))}
@@ -47,16 +50,3 @@ function Bir005_Gallery() {
 }
 
 export default Bir005_Gallery
-
-
-
-
-{/* <div >
-            <h1>Gallery</h1>
-            <div className='bir005-familypic'>
-              <img src={family} alt="" />
-              <div className="bir005-picbutton">
-                <span>FAMILY PHOTOS</span>
-              </div>
-            </div>
-          </div> */}

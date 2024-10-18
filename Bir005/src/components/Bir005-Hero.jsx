@@ -24,9 +24,11 @@ function Bir005_Hero() {
               <h1 id="bir005-namebir">ETHAN</h1>
               <h1>IS TURNING <b>3</b></h1>
               <p>14th Jan&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4:00PM</p>
+              <a href="https://maps.app.goo.gl/tFDawx72Q8SDE3TP8">
               <div className="bir005-mapbutton">
                 <img src={location_button} alt="📍" /><span>OPEN IN MAPS</span>
               </div>
+              </a>
             </div>
           </div>
         </div>

@@ -25,7 +25,10 @@ padding: 0 0 9.6rem 0;
     margin: 0 5%;
     font-size: 1.75rem;
 }
-
+.bir005-mapbutton a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
 .bir005-hero-animation {
     /* width: 40%; 
     height: 51%; */
@@ -138,7 +141,7 @@ padding: 0 0 9.6rem 0;
     color: #B55200;
 }
 .bir005-mapbutton img{
-    width: 10%;
+    width: 7%;
     padding: 1%;
 }
 

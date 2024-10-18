@@ -22,9 +22,11 @@ function Bir005_Destination() {
     <p className="bir005-address">
      88, Avalahalli Kanakapura Rd, Royal Park Residency Layout 2,JP Nagar 9th Phase, J. P. Nagar, Bengaluru, Karnataka 560108
     </p>
+    <a href="https://maps.app.goo.gl/tFDawx72Q8SDE3TP8">
     <div className="bir005-mapbuttond">
           <img src={location_button} alt="📍" /><span>OPEN IN MAPS</span>
           </div>
+          </a>
 
    </div>
   </div>
