@@ -1,0 +1,39 @@
+nav {
+  background-color: #ffffff;
+  padding: 30px 10px;
+  position: fixed;
+  width: 97.5%;
+  z-index: 11;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+nav a {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #7e1719;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (width <650px) {
+  nav li {
+    margin: 0 0px;
+  }
+}
