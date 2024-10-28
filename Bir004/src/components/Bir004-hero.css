@@ -1,0 +1,108 @@
+#bir004-hero{
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    padding:4.6rem 0 9.6rem 0 ;
+}
+.bir004-navmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bir004-navbar{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    background: linear-gradient(285.84deg, #CA7800 12.34%, #DCA956 88.95%);
+    font-family: "Rachel Roman";
+    font-size: 2rem;
+    border-radius: 50px;
+}
+.bir004-navbar a{
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    padding: 1.5% 0;
+}
+.bir004-butterfly{
+    position: relative;
+    left: -9%;
+    padding: 5% 0 0 0;
+}
+
+.bir004-datetime{
+    font-family: "Mauline";
+    padding: 0 5% 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bir004-invite{
+        background: linear-gradient(180deg, #E3B268 0%, #BE803F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 13rem;
+}
+#bir004-highlight{
+    text-shadow: 3px 3px 10px #E3B268 ;
+    font-weight: bold;
+}
+.bir004-jennydate{
+    font-size: 8rem;
+    font-family: "Mauline";
+}
+#bir004-divider{
+    height: 7rem;
+}
+.bir004-bottleimg{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 14%;
+}
+    
+.bir004-bottleimg img{
+    position: relative;
+    width: 90%;
+}
+.bir004-hero-mapbutton {
+    font-size: 3rem;
+    background: linear-gradient(180deg, #E3B268 0%, #BE803F 100%);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    justify-content: center;
+    border: 5px solid #E3B268 ; /* Set the border width */
+    border-radius: 50px;
+    transition: background 0.4s ease, transform 0.4s ease; /* Add transition for background and transform */
+}
+
+.bir004-hero-mapbutton:hover {
+    background: transparent; /* Make background transparent on hover */
+    transform: scale(1.1); /* Grow the button on hover */
+}
+
+.bir004-hero-mapbutton span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+    transition: transform 0.3s ease, background 0.3s ease; /* Add transition for text transform and background */
+}
+
+.bir004-hero-mapbutton:hover span {
+    transform: scale(1.1); /* Grow the text on hover */
+    background: linear-gradient(180deg, #BE803F 0%, #E3B268 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bir004-hero-mapbutton span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+}
