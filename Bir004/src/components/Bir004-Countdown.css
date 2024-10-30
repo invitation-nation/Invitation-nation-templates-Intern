@@ -1,0 +1,133 @@
+#bir004-countdown{
+    background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
+    padding: 9.6rem 0;
+}
+.bir004-countdown-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mauline';
+    font-size: 3rem;
+}
+.bir004-countdown-header img{
+    margin: 0 auto;
+}
+.bir004-counting{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rachel Roman';
+    color: #FFE9C8;
+    padding: 2% 
+    ;
+}
+.bir004-count-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 20%;
+
+    
+}
+.bir004-countnum{
+    font-size: 4rem;
+    padding: 5%;
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+.bir004-countq{
+    font-size: 3rem;
+    padding: 5%;
+    margin: 5%;
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+
+}.bir004-about {
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    border: 6px solid; 
+    border-image: linear-gradient(90deg, #E3B268 0%, #BE803F 55.97%, #A86227 100%, #A5460A 100%) 1; 
+    
+}
+.bir004-aboutheading{
+    color: #FFE9C8;
+    font-family: 'Rachel Italic';
+    text-align: center;
+    font-size: 5rem;
+    padding: 5% 0 0 0;
+}
+.bir004-bgirlimage{
+    position: relative;
+    padding: 5%;
+    
+}
+.bir004-sticks{
+    width: 100px;
+    border: 1.76px solid;
+    border-image: linear-gradient(180deg, #FFC265 0%, #DFB181 100%) 1;
+}
+#image{
+    position: relative;
+}
+#stick1{
+    position: absolute;
+    top:0;
+}
+.bir004-aboutdetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bir004-bgirlimage {
+    transition: transform 0.5s ease;
+    z-index: 1; /* Ensure the image is above the details initially */
+}
+
+.bir004-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 50%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    transition: left 0.25s ease, opacity 0.25s ease;
+}
+.bir004-details p{
+    font-family: 'Rachel Roman';
+    font-size: 3rem;
+}
+
+.bir004-aboutdetails:hover .bir004-bgirlimage {
+    transform: translateX(-50%); /* Move the image to the left */
+}
+
+.bir004-aboutdetails:hover .bir004-details {
+    left: 50%; /* Move the details to the right */
+    opacity: 1;
+}   
+#bir004-details-head{
+    font-family: 'Mauline';
+    color: #FFE9C8;
+    font-size: 5rem;
+
+}
+#bir004-details-highlight{
+    font-family: 'Mauline';
+    font-size: 5rem;
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

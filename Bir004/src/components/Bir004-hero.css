@@ -15,6 +15,8 @@
     font-family: "Rachel Roman";
     font-size: 2rem;
     border-radius: 50px;
+    position: relative;
+        z-index: 3;
 }
 .bir004-navbar a{
     background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
@@ -25,13 +27,13 @@
 }
 .bir004-butterfly{
     position: relative;
-    left: -9%;
+    left: -1%;
     padding: 5% 0 0 0;
 }
 
 .bir004-datetime{
     font-family: "Mauline";
-    padding: 0 5% 0 0;
+    padding: 0 5% 5% 0;
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -40,10 +42,12 @@
 }
 
 .bir004-invite{
-        background: linear-gradient(180deg, #E3B268 0%, #BE803F 100%);
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 13rem;
+        position: relative;
+        z-index: 3;
 }
 #bir004-highlight{
     text-shadow: 3px 3px 10px #E3B268 ;
@@ -60,7 +64,7 @@
     position: absolute;
     right: 0;
     width: 50%;
-    top: 14%;
+    top: 20%;
 }
     
 .bir004-bottleimg img{
@@ -75,7 +79,7 @@
     align-items: center;
     margin-top: 2%;
     justify-content: center;
-    border: 5px solid #E3B268 ; /* Set the border width */
+    border: 2px solid #E3B268 ; /* Set the border width */
     border-radius: 50px;
     transition: background 0.4s ease, transform 0.4s ease; /* Add transition for background and transform */
 }
@@ -105,4 +109,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1%;
+}
+.bir004-herorightdeco{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.bir004-heroleftdeco{
+    position: absolute;
+    left:0;
+    top: 0;
 }

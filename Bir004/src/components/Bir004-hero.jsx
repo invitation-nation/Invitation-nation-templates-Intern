@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import bottle from '../assets/img/Bir004-Hero/HeroBottle.png';
 import butterfly from '../assets/img/Bir004-Hero/hero-butterfly.svg';
 import divider from '../assets/img/Bir004-Hero/herodivider.svg';
-
+import leftdeco from '../assets/img/Bir004-Hero/heroleftdeco.svg';
+import rightdeco from '../assets/img/Bir004-Hero/herorightdeco.svg';
 function Bir004_hero() {
 return (
     <>
@@ -25,7 +26,7 @@ return (
                     
                     <div className="bir004-datetime">
                         <div className='bir004-jenny-firstline'>
-                            <span>Jenny's </span>
+                            <span>Jenny&apos;s </span>
                             <span id='bir004-highlight'>25th</span>
                         </div>
                         <div className='bir004-jenny-secondline'>
@@ -44,6 +45,12 @@ return (
             </div>
             <div className="bir004-bottleimg">
                 <img src={bottle} alt="" /> 
+            </div>
+            <div className="bir004-herorightdeco">
+                <img src={rightdeco} alt="" />
+            </div>
+            <div className="bir004-heroleftdeco">
+                <img src={leftdeco} alt="" />
             </div>
             
         </section>
