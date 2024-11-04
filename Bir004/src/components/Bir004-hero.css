@@ -1,6 +1,7 @@
 #bir004-hero{
     background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
     padding:4.6rem 0 9.6rem 0 ;
+    position: relative;
 }
 .bir004-navmain{
     display: flex;
@@ -60,16 +61,17 @@
 #bir004-divider{
     height: 7rem;
 }
-.bir004-bottleimg{
+#bir004-bottleimg{
     position: absolute;
+    bottom: 0%;
     right: 0;
     width: 50%;
-    top: 20%;
+    z-index: 5;
 }
     
-.bir004-bottleimg img{
-    position: relative;
-    width: 90%;
+#bir004-bottleimg img{  
+    width: 100%;
+    text-align: center;
 }
 .bir004-hero-mapbutton {
     font-size: 3rem;
@@ -110,13 +112,81 @@
     -webkit-text-fill-color: transparent;
     padding: 1%;
 }
-.bir004-herorightdeco{
+#bir004-herorightdeco{
     position: absolute;
     right: 0;
     top: 0;
 }
-.bir004-heroleftdeco{
+#bir004-heroleftdeco{
     position: absolute;
     left:0;
     top: 0;
+}
+#bir004-bottleimgmo{
+    display: none;
+}
+@media (width<650px){
+    #bir004-hero{
+        padding-bottom: 0;
+    }
+    .bir004-navbar{
+        display:none;
+    }
+    #bir004-bottleimg{
+        display: none;
+    }
+    .bir004-invite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bir004-invite{
+        font-size: 5rem;
+    }
+    .bir004-jennydate{
+        font-size: 3rem;
+    }
+    #bir004-bottleimgmo{
+        display: inline;
+        padding: 5% 0 0 0;
+    }
+    #bir004-bottleimgmo img{
+        width: 100%;
+    }
+    .bir004-butterfly img{
+        width: 30%;
+    }
+    #bir004-heroleftdeco img,#bir004-herorightdeco img{
+        width: 50%;
+    }
+    #bir004-divider{
+        height: 3rem;
+    }
+    .bir004-hero-mapbutton {
+        font-size: 2rem;
+        width: 70%;
+    }
+
+}
+@media(width<1150px && width>650px){
+    .bir004-butterfly img{
+        width: 10%;
+    }
+    .bir004-datetime{
+        padding:0;
+    }
+    .bir004-invite{
+        font-size: 8rem;
+    }
+    .bir004-jennydate{
+        font-size: 5rem;
+    }
+}
+@media(width>1920px){
+    #bir004-bottleimg{
+        width: 35%;
+        right: 10%;
+    }
+
 }

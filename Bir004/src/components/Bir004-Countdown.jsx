@@ -2,6 +2,10 @@ import React from 'react'
 import './Bir004-Countdown.css';
 import countline from '../assets/img/Bir004-Countdown/countdownline.svg';
 import birthdaygirl from '../assets/img/Bir004-Countdown/Aboutimage.png';
+import topleft from '../assets/img/Bir004-Countdown/about-ballon-topleft.svg';
+import bottomleft from '../assets/img/Bir004-Countdown/about-circle-bottomleft.svg';
+import bottomright from '../assets/img/Bir004-Countdown/aboutcircle-bottomright.svg';
+import rightmid from '../assets/img/Bir004-Countdown/aboutcirlcle1-rightmid.svg';
 function Bir004_Countdown() {
   return (
     <>
@@ -59,14 +63,21 @@ function Bir004_Countdown() {
                             <span id='bir004-details-highlight'>25th </span>
                             <span id='bir004-details-head'>Birthday</span>
                        </div>
-                            <p>Join us as we celebrate a fabulous 25 years
-                            of sparkle and joy! Let's make this milestone birthday unforgettable with laughter, love, 
-                            and plenty of fun. Your presence will make the day truly special!
-                            </p>
+                        <p>Join us as we celebrate a fabulous 25 years
+                        of sparkle and joy! Let's make this milestone birthday unforgettable with laughter, love, 
+                        and plenty of fun. Your presence will make the day truly special!
+                        </p>
+                        <a href="" className="bir004-about-highlightbutton">
+                            <span>HIGHLIGHTS</span>
+                        </a>
                      </div>
                 </div>
             </div>
         </div>
+        <img id='bir004-topleft' src={topleft} alt="" />
+        <img id='bir004-bottomleft' src={bottomleft} alt="" />
+        <img id='bir004-bottomright' src={bottomright} alt="" />
+        <img id='bir004-rightmid' src={rightmid} alt="" />
     </section>
     </>
   )

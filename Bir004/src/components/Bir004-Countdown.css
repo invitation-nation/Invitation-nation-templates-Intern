@@ -1,6 +1,8 @@
 #bir004-countdown{
     background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
     padding: 9.6rem 0;
+    position: relative;
+    z-index: 12;
 }
 .bir004-countdown-header{
     text-align: center;
@@ -53,7 +55,7 @@
     background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
     border: 6px solid; 
     border-image: linear-gradient(90deg, #E3B268 0%, #BE803F 55.97%, #A86227 100%, #A5460A 100%) 1; 
-    
+    margin: 10% 0 0 0 ;
 }
 .bir004-aboutheading{
     color: #FFE9C8;
@@ -103,7 +105,7 @@
     height: 100%;
     color: white;
     opacity: 0;
-    transition: left 0.25s ease, opacity 0.25s ease;
+    transition: left 0.25s ease, opacity 0.5s ease;
 }
 .bir004-details p{
     font-family: 'Rachel Roman';
@@ -130,4 +132,72 @@
     background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.bir004-about-highlightbutton{
+    text-align: center;
+    padding: 2%;
+    margin: 2% 0 0 0;
+    background: linear-gradient(180deg, #E3B268 0%, #BE803F 100%);
+    width: 50%;
+    font-size: 3rem; 
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1.76px solid #FFC265;
+    transition: background 0.4s ease, transform 0.4s ease;
+    font-family: 'Rachel Roman';
+}
+.bir004-about-highlightbutton span{
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bir004-about-highlightbutton:hover {
+    background: transparent; /* Make background transparent on hover */
+    transform: scale(1.1); /* Grow the button on hover */
+}
+
+.bir004-about-highlightbutton span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+    transition: transform 0.3s ease, background 0.3s ease; /* Add transition for text transform and background */
+}
+
+.bir004-about-highlightbutton:hover span {
+    transform: scale(1.1); /* Grow the text on hover */
+    background: linear-gradient(180deg, #BE803F 0%, #E3B268 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bir004-about-highlightbutton span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+}
+#bir004-topleft,#bir004-bottomleft,#bir004-bottomright,#bir004-rightmid{
+    position:absolute;
+    z-index: -1;
+}
+#bir004-topleft{
+    top:0;
+    left:0;
+    width: 30%;
+}
+#bir004-bottomleft{
+    bottom:0;
+    left:0;
+    width: 30%;
+}
+#bir004-bottomright{
+    bottom:0;
+    right:0;
+    width: 30%;
+}
+#bir004-rightmid{
+    top:25%;
+    right:0;
+    width: 30%;
 }

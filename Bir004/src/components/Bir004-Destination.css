@@ -1,0 +1,91 @@
+#bir004-destination{
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    padding:9.6rem 0;
+    position: relative;
+}
+.bir004-destinationcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10% 0;
+}
+.bir004-destinationcontainer img{
+    width: 40%;
+}
+.bir004-destinationdetails{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+}
+.bir004-destinationdetails h3{
+    font-family: 'Rachel Italic';
+    font-size: 2.5rem;
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bir004-destinationdetails h1{
+    font-family: 'Mauline';
+    font-size: 5rem;
+    color: #FFE9C8;
+}
+.bir004-destinationdetails p{
+    font-family: 'Mauline';
+    font-size: 3rem;
+    color: #FFE9C8;
+}
+
+.bir004-destination-mapbutton {
+    text-decoration: none;
+    font-family: 'Rachel Roman';
+    font-size: 3rem;
+    background: linear-gradient(180deg, #E3B268 0%, #BE803F 100%);
+    width: 60%;
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    justify-content: center;
+    border: 2px solid #E3B268 ; /* Set the border width */
+    border-radius: 50px;
+    transition: background 0.4s ease, transform 0.4s ease; /* Add transition for background and transform */
+}
+
+.bir004-destination-mapbutton:hover {
+    background: transparent; /* Make background transparent on hover */
+    transform: scale(1.1); /* Grow the button on hover */
+}
+
+.bir004-destination-mapbutton span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease, background 0.3s ease; /* Add transition for text transform and background */
+}
+
+.bir004-destination-mapbutton:hover span {
+    transform: scale(1.1); /* Grow the text on hover */
+    background: linear-gradient(180deg, #BE803F 0%, #E3B268 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bir004-destination-mapbutton span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+}
+#bir004-desrt{
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 10%;
+}
+#bir004-deslb{
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width: 10%;
+}
