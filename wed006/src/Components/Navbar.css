@@ -2,7 +2,7 @@ nav {
   background-color: #ffffff;
   padding: 30px 10px;
   position: fixed;
-  width: 97.5%;
+  width: 100%;
   z-index: 11;
 }
 
@@ -17,7 +17,7 @@ nav ul {
 
 nav a {
   font-family: "Philosopher", sans-serif;
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #7e1719;
   font-weight: bold;

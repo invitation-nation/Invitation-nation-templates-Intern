@@ -5,36 +5,23 @@ import Gallerygrid from "../Components/Gallerygrid";
 import SlideNav from "../Components/Slidernav";
 import Footer from "../Components/Footer";
 import NavBar from "../Components/Navbar";
-import Bafkrounimg from "/src/assets/couple-bg.svg";
+import gallerybg from "../assets/Gellary_bg.jpg";
 
 export default function Gallerysection() {
   return (
     <div className="gallery-section">
       <div className="gallery-section-heading">
         <NavBar />
-        <h1
-          className="Gallery"
+        <div
+          classname="gallery-bg"
           style={{
-            paddingTop: "12rem",
-            textAlign: "center",
-            fontFamily: "Style Script",
-            fontSize: "5rem",
+            backgroundImage: `url(${gallerybg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center -20rem",
+            height: "85vh",
+            
           }}
-        >
-          Gallery
-        </h1>
-
-        <img
-          src={Bafkrounimg}
-          alt=""
-          style={{
-            height: "10rem",
-            backgroundColor: "#D87173",
-            marginTop: "2rem",
-            width: "100%",
-            objectFit: "cover",
-          }}
-        />
+        ></div>
         <Gallerygrid />
         <SlideNav />
         <Footer />

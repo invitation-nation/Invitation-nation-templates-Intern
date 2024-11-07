@@ -6,7 +6,7 @@
   background-position: center;
   background-size: cover;
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
 }
 
 .hero-container {
@@ -28,7 +28,7 @@
   z-index: 4;
   background-image: url("../assets/hero-section/hero-text-background.png");
   background-position: center;
-  background-size: 35% 90%;
+  background-size: 35% 80%;
   background-repeat: no-repeat;
   width: 100%;
   height: 60rem;
@@ -109,7 +109,7 @@
 
 .flower-top {
   position: absolute;
-  top: 50px;
+  top: 10px;
   left: -25px;
   z-index: 3;
   width: 120%;
@@ -255,7 +255,7 @@
 }
 
 .hero-btn-container {
-  z-index: 9999;
+  z-index: 9;
   font-family: philosopher, sans-serif;
   font-weight: 900;
   font-size: 2.4rem;

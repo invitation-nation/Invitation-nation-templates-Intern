@@ -41,12 +41,12 @@ const HeroSection = () => {
             <div className="flower-bottom">
               <img src={RoseLine} alt="" />
             </div>
-            <div className="petals-1">
+            {/* <div className="petals-1">
               <img src={Petals} alt="" />
             </div>
             <div className="petals-2">
               <img src={Petals} alt="" />
-            </div>
+            </div> */}
             <div className="golden-fence">
               <img src={GoldenFence} alt="" />
             </div>
@@ -55,9 +55,9 @@ const HeroSection = () => {
             </div>
             <div className="hero-container-box">
               <div className="hero-couple-box">
-                <span className="couple-name">Pooja</span>
-                <span className="couple-weds">Weds</span>
-                <span className="couple-name">Bhuvan</span>
+                <p className="couple-name">Pooja</p>
+                <p className="couple-weds">Weds</p>
+                <p className="couple-name">Bhuvan</p>
               </div>
               <div className="hero-time-container">
                 <img className="leaf-top" src={Leaf} alt="" />
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 <span className="hero-time">21 & 22 &nbsp; Jan &nbsp;2024</span>
               </div>
               <span className="hero-location-text">
-                <span>Venu</span>
+                <span>Venue</span>
                 <p>Vijaynagar Banglore</p>
               </span>
             </div>

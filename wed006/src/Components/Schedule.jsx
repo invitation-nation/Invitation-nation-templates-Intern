@@ -8,24 +8,26 @@ import ArrowBack from "../assets/schedule-section/arrow-back.svg";
 import ArrowForward from "../assets/schedule-section/arrow-forwards.svg";
 import "./Schedule.css";
 
-const events = [
-  {
-    day: "Saturday",
-    date: "1st June",
-    event: "Reception",
-    time: "7:00 PM",
-  },
-  {
-    day: "Sunday",
-    date: "2nd June",
-    event: "Muhurtha",
-    time: "9:30 AM",
-  },
-  // Add more events as needed
+const groomEvents = [
+  { Details: "Groom event 1 details...", page: 1 },
+  { Details: "Groom event 2 details...", page: 2 },
+  { Details: "Groom event 3 details...", page: 3 },
+  // Add more groom events if needed
+];
+
+const brideEvents = [
+  { Details: "Bride event 1 details...", page: 1 },
+  { Details: "Bride event 2 details...", page: 2 },
+  { Details: "Bride event 3 details...", page: 3 },
+  // Add more bride events if needed
 ];
 
 const Schedule = () => {
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
+  const [selectedEvent, setSelectedEvent] = useState("groom"); // "groom" or "bride"
+
+  const events = selectedEvent === "groom" ? groomEvents : brideEvents;
+  const currentEvent = events[currentEventIndex];
 
   const handleNext = () => {
     setCurrentEventIndex((prevIndex) => (prevIndex + 1) % events.length);
@@ -37,55 +39,66 @@ const Schedule = () => {
     );
   };
 
-  const currentEvent = events[currentEventIndex];
+  const handleSelectEvent = (type) => {
+    setSelectedEvent(type);
+    setCurrentEventIndex(0); // Reset to the first event when switching
+  };
 
   return (
     <>
       <section id="schedule-section">
         <div className="nimbus-container">
+          <div className="cloud-left-container">
+            <img src={CloudLeft} alt="" />
+          </div>
+          <div className="cloud-right-container">
+            <img src={CloudRight} alt="" />
+          </div>
           <div className="schedule-container">
-            <div className="cloud-left-container">
-              <img src={CloudRight} alt="" />
-            </div>
-            <div className="cloud-right-container">
-              <img src={CloudRight} alt="" />
-            </div>
             <div className="golden-fence-container">
               <img src={GoldenFence} alt="" />
             </div>
-
-            <div className="schedule-nav">
-              <h2 className="schedule-title">Join the celebration on</h2>
-              <div className="schedule-controls">
-                <div className="schedule-control-left" onClick={handlePrev}>
-                  <img src={ArrowBack} alt="Previous" />
-                </div>
-                <div className="schedule-control-right" onClick={handleNext}>
-                  <img src={ArrowForward} alt="Next" />
-                </div>
-              </div>
-            </div>
-
-            <div className="schedule-container-box">
-              <div className="schedule-img-box">
-                <img src={BrideGroomArch} alt="" />
-              </div>
-              <div className="schedule-line"></div>
-              <div className="schedule-text-box">
-                <span className="schedule-day">{currentEvent.day}</span>
-                <span className="schedule-date">{currentEvent.date}</span>
-                <div className="schedule-details">
-                  <span>{currentEvent.event}</span>
-                  <span>{currentEvent.time}</span>
-                </div>
-                <a
-                  href="https://www.google.com/maps/dir//329,+14th+Cross+Rd,+Muthuraya+Swamy+Extension,+Sunkadakatte,+Bengaluru,+Karnataka+560091/@12.9900846,77.4253384,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae3de2650dce8f:0x349bda15b1d1e60c!2m2!1d77.5077146!2d12.9901014?entry=ttu"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="schedule-btn"
+            <div className="schedule-flex">
+              <div className="schedule-groom-brid-btn">
+                <button
+                  className={`schedule-btn ${
+                    selectedEvent === "groom" ? "active" : ""
+                  }`}
+                  onClick={() => handleSelectEvent("groom")}
                 >
-                  Open in Maps
-                </a>
+                  Groom
+                </button>
+                <button
+                  className={`schedule-btn ${
+                    selectedEvent === "bride" ? "active" : ""
+                  }`}
+                  onClick={() => handleSelectEvent("bride")}
+                >
+                  Bride
+                </button>
+              </div>
+              <h2 className="schedule-title">Wishes for the Couple</h2>
+            </div>
+            <div className="schedule-flex">
+              <div className="schedule-nav">
+                <div className="schedule-controls">
+                  <div className="schedule-control-left" onClick={handlePrev}>
+                    <img src={ArrowBack} alt="Previous" />
+                  </div>
+                  <div className="schedule-control-rfight" onClick={handleNext}>
+                    <img src={ArrowForward} alt="Next" />
+                  </div>
+                </div>
+              </div>
+              <div className="schedule-container-box">
+                <div className="schedule-text-box">
+                  <span className="schedule-date">{currentEvent.Details}</span>
+                  <div className="schedule-details">
+                    <div className="pages-details">
+                      {currentEvent.page} of {events.length}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
