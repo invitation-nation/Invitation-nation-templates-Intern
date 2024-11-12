@@ -125,6 +125,27 @@
 #bir004-bottleimgmo{
     display: none;
 }
+@media(width>1920px){
+    #bir004-bottleimg{
+        width: 35%;
+        right: 10%;
+    }
+
+}
+@media(width<1150px ){
+    .bir004-butterfly img{
+        width: 10%;
+    }
+    .bir004-datetime{
+        padding:0;
+    }
+    .bir004-invite{
+        font-size: 8rem;
+    }
+    .bir004-jennydate{
+        font-size: 5rem;
+    }
+}
 @media (width<650px){
     #bir004-hero{
         padding-bottom: 0;
@@ -166,27 +187,6 @@
     .bir004-hero-mapbutton {
         font-size: 2rem;
         width: 70%;
-    }
-
-}
-@media(width<1150px && width>650px){
-    .bir004-butterfly img{
-        width: 10%;
-    }
-    .bir004-datetime{
-        padding:0;
-    }
-    .bir004-invite{
-        font-size: 8rem;
-    }
-    .bir004-jennydate{
-        font-size: 5rem;
-    }
-}
-@media(width>1920px){
-    #bir004-bottleimg{
-        width: 35%;
-        right: 10%;
     }
 
 }

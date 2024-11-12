@@ -1,0 +1,175 @@
+#bir004-wishes{
+    padding: 9.6rem 0;
+    background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
+
+}
+.bir004-wish-headmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Mauline';
+    color: #FFE9C8;
+    font-size: 5rem;
+}
+.bir004-wishes-head{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: fit-content;
+    font-family: 'Mauline';
+    color: #FFE9C8;
+    font-size: 5rem;
+}
+.bir004-wishes-head h1{
+    position: absolute;
+    bottom: -50%;
+    right: 10%;
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bir004-wishes-content-main{
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
+.bir004-wishes-content-entrysection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    width: 58%;
+    padding: 2% 0;
+    border-radius: 10px;
+}
+.bir004-wish-content-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bir004-wishes-name-entry{
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    width: 95%;
+    margin: 2% 0;
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+    color: #502F00;
+    text-align: center;
+    font-family: 'Rachel Roman';
+    font-size: 2rem;
+}
+.bir004-wish-content-message{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bir004-wishes-message-entry{
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    width: 95%;
+    padding: 10%;
+    margin: 2% 0;
+    border: none;
+    border-radius: 5px;
+    color: #502F00;
+    text-align: center;
+    font-family: 'Rachel Roman';
+    font-size: 2rem;
+}
+.bir004-wish-content-sendbutton{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+}
+
+.bir004-wishes-send {
+    font-size: 2.5rem;
+    background: linear-gradient(180deg, #E3B268 0%, #BE803F 100%);
+    width: 40%;
+    padding:1%;
+    font-family: 'Rachel Roman';
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    justify-content: center;
+    border: 2px solid #E3B268 ; /* Set the border width */
+    border-radius: 50px;
+    transition: background 0.4s ease, transform 0.4s ease; /* Add transition for background and transform */
+}
+
+.bir004-wishes-send:hover {
+    background: transparent; /* Make background transparent on hover */
+    transform: scale(1.1); /* Grow the button on hover */
+}
+
+.bir004-wishes-send span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+    transition: transform 0.3s ease, background 0.3s ease; /* Add transition for text transform and background */
+}
+
+.bir004-wishes-send:hover span {
+    transform: scale(1.1); /* Grow the text on hover */
+    background: linear-gradient(180deg, #BE803F 0%, #E3B268 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bir004-wishes-send span {
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+}
+.bir004-wishes-display-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    width: 38%;
+    padding: 2% 0;
+    border-radius: 10px;
+}
+.bir004-wishes-display-header{
+    font-size: 4rem;
+    font-family: 'Mauline';
+    color: #FFE9C8;
+}
+.bir004-wishes-display-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5% 0;
+}
+.bir004-wishes-display-message{
+    font-size: 2rem;
+    font-family: 'Rachel Roman';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+}
+.bir004-wishes-display-message p{
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5% 0;
+}
+.bir004-wishes-display-message h2{
+    color: #FFE9C8;
+}

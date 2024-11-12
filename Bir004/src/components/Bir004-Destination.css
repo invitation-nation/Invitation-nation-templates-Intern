@@ -83,9 +83,154 @@
     right: 0;
     width: 10%;
 }
-#bir004-deslb{
+#bir004-deslm{
     position:absolute;
-    bottom:0;
+    bottom:50%;
     left: 0;
     width: 10%;
+}
+#bir004-deslt{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 10%;
+}
+#bir004-actrt{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10%;
+}
+#bir004-desrm{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+#bir004-actrb{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+}
+#bir004-actlb{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+}
+/* Activity css below */
+.bir004-activitycontainer{
+    padding: 9.6rem 0;
+
+}
+.bir004-activity-title{
+    font-family: 'Rachel Italic';
+    font-size: 5rem;
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.bir004-activity-uppert{
+    font-family: 'Rachel Roman';
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.bir004-activity-headline{
+    width: 30%;
+}
+.bir004-actvity-lowert h1{
+    color: #FFE9C8;
+}
+
+.bir004-activities{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0;
+}
+.bir004-activityn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 23%;
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    padding: 4% 2%;
+    border-radius: 20px;
+}
+.bir004-activityn img{
+    width: 100%;
+}
+.bir004-description{
+    font-family: 'Rachel Roman';
+    font-size: 2.5rem;
+    color: #392C19;
+    text-align: center;
+    padding: 2%;
+}
+
+@media(width<650px){
+   
+    .bir004-destinationcontainer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .bir004-destinationcontainer img{
+        width: 80%;
+    }
+    .bir004-destinationdetails{
+        width: 90%;
+        padding: 5% 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .bir004-destinationdetails h3{
+        font-size: 3rem;
+    }
+    .bir004-destinationdetails h1{
+        font-size: 4rem;       
+    }
+    .bir004-destinationdetails p{
+        font-size: 2.5rem;
+    }
+    .bir004-destination-mapbutton{
+        font-size: 2.5rem;
+    }
+    #bir004-desrt{
+        width: 20%;
+    }
+    #bir004-deslb{
+        width: 20%;
+    }
+    .bir004-activity-main{
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .bir004-activity-main::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+    .bir004-activities{
+        width: 300%;
+    }
+    .bir004-activitycontainer{
+        padding: 4.6rem 0;
+    }
+    .bir004-activity-uppert h2{
+        font-size: 3rem;
+    }
+    .bir004-activity-uppert img{
+        width: 15%;
+    }
+    .bir004-actvity-lowert h1 {
+        font-size: 6rem;
+    }
+    .bir004-activityn{
+        border-radius: 10px;
+    }
+    
 }

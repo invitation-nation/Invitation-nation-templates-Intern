@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './Bir004-Countdown.css';
 import countline from '../assets/img/Bir004-Countdown/countdownline.svg';
 import birthdaygirl from '../assets/img/Bir004-Countdown/Aboutimage.png';
@@ -7,6 +7,27 @@ import bottomleft from '../assets/img/Bir004-Countdown/about-circle-bottomleft.s
 import bottomright from '../assets/img/Bir004-Countdown/aboutcircle-bottomright.svg';
 import rightmid from '../assets/img/Bir004-Countdown/aboutcirlcle1-rightmid.svg';
 function Bir004_Countdown() {
+        useEffect(() => {
+            const handleScroll = () => {
+                if (window.innerWidth < 650) {
+                    const aboutDetails = document.querySelector('.bir004-aboutdetails');
+                    const rect = aboutDetails.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+                    if (rect.top < windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+                        setTimeout(() => {
+                            aboutDetails.classList.add('scrolled');
+                        }, 2000); // 2 seconds delay
+                    } else {
+                        aboutDetails.classList.remove('scrolled');
+                    }
+                }
+            };
+    
+            window.addEventListener('scroll', handleScroll);
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }, []);
   return (
     <>
     <section id="bir004-countdown">
@@ -51,7 +72,8 @@ function Bir004_Countdown() {
             </div>
             <div className="bir004-about">
                 <div className="bir004-aboutheading">
-                    <h1>Meet the Birthday Girl</h1>
+                    <h1 id="bir004-about-headingmobile">About Jenny</h1>
+                    <h1 id='bir004-about-headingpc'>Meet the Birthday Girl</h1>
                 </div>
                 <div className="bir004-aboutdetails">
                     <div id='image' className="bir004-bgirlimage">
