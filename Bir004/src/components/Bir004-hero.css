@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .bir004-navbar{
     display: flex;
@@ -30,6 +31,7 @@
     position: relative;
     left: -1%;
     padding: 5% 0 0 0;
+    z-index: 3;
 }
 
 .bir004-datetime{
@@ -125,6 +127,14 @@
 #bir004-bottleimgmo{
     display: none;
 }
+#bir004-herobg{
+    position: absolute;
+    bottom: 0;
+    left: -40%;
+    width: 140%;
+    z-index: 0;
+    filter: blur(1.5px);
+}
 @media(width>1920px){
     #bir004-bottleimg{
         width: 35%;
@@ -188,5 +198,8 @@
         font-size: 2rem;
         width: 70%;
     }
-
+    #bir004-herobg{
+        width: 200%;
+        left: -75%;
+    }
 }

@@ -6,6 +6,7 @@ import butterfly from '../assets/img/Bir004-Hero/hero-butterfly.svg';
 import divider from '../assets/img/Bir004-Hero/herodivider.svg';
 import leftdeco from '../assets/img/Bir004-Hero/heroleftdeco.svg';
 import rightdeco from '../assets/img/Bir004-Hero/herorightdeco.svg';
+import herobg from '../assets/img/Bir004-Hero/herobackground.svg';
 function Bir004_hero() {
 return (
     <>
@@ -54,7 +55,7 @@ return (
             <div id="bir004-heroleftdeco">
                 <img src={leftdeco} alt="" />
             </div>
-            
+            <img src={herobg} alt="" id='bir004-herobg'/>
         </section>
     </>
 )

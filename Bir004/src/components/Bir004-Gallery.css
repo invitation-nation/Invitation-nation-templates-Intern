@@ -1,0 +1,192 @@
+#bir004-gallery {
+    padding: 9.6rem 0 0 0;
+    
+    background: linear-gradient(291.6deg, #392C19 0.93%, #000000 101.51%);
+}
+#dummy{
+    position: relative;
+}
+
+.bir004-gallery-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #DFB181;
+    border-radius: 15px;
+}
+
+.bir004-gallery-main h1 {
+    font-family: 'Wittgenstein';
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+}
+.bir004-gallery-setsection{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.bir004-gallery-setsection button {
+    font-family:'Wittgenstein';
+    font-size: 3rem;
+    width: 20%;
+    margin: 1%;
+    border: 4px solid #502F00;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: background 1s;
+}
+.bir004-gallery-setsection button span{
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bir004-gallery-setsection button:hover {
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+}
+
+.bir004-gallery-setsection button.active {
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+}
+
+.bir004-gallery-pictures-pc {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.bir004-gallery-pictures-pc img {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform: translate(0, 0);
+}
+
+.bir004-gallery-pictures-pc img:nth-child(2) {
+    transform: rotate(-5deg);
+}
+
+.bir004-gallery-pictures-pc img:nth-child(3) {
+    transform: rotate(5deg);
+}
+
+.bir004-gallery-pictures-pc img:nth-child(4) {
+    transform: rotate(-10deg);
+}
+
+.bir004-gallery-pictures-pc img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.bir004-gallery-pictures-pc img.left {
+    transform: translate(-100%, -100%);
+    opacity: 0;
+}
+
+.bir004-gallery-pictures-pc img:not(.active):not(.left) {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+.bir004-gallery-next,.bir004-gallery-prev{
+    background-color: transparent;
+    margin: 2%;
+    width: 5%;
+    border: none;
+}
+.bir004-gallery-prev{
+    transform: scaleX(-1);
+}
+.bir004-gallery-mobile-nav{
+    display: none;
+}
+#navbuttonnext{
+    position: relative;
+}
+#navbuttonprev{
+    position: relative;
+}
+#bir004-gallery-bl,#bir004-gallery-br,#bir004-gallery-tr,#bir004-gallery-tl,#bir004-gallery-tr1{
+    position: absolute;
+    width: 10%;
+}
+#bir004-gallery-bl{
+    bottom: 0%;
+    left: 0;
+}
+#bir004-gallery-br{
+    bottom: 0;
+    right: 0;
+}
+#bir004-gallery-tr{
+    top: 0;
+    right: 0;
+}
+#bir004-gallery-tl{
+    top: 0;
+    left: 0;
+}
+#bir004-gallery-tr1{
+    top: 0;
+    right: 0;
+}
+#footer-butterfly{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (width<650px){
+    .bir004-gallery-pictures-pc{
+        height: 700px;
+    }
+    .bir004-gallery-setsection{
+        width: 100%;
+    }
+    .bir004-gallery-setsection button{
+        width: 30%;
+    }
+    .bir004-gallery-setsection span{
+        font-size: 2rem;
+    }
+    .bir004-gallery-prev,.bir004-gallery-next{
+        display: none;
+    }
+    .bir004-gallery-mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin: 0 0 5% 0;
+    }
+    .bir004-gallery-mo-prev{
+        transform: scaleX(-1);
+    }
+    .bir004-gallery-mo-prev,.bir004-gallery-mo-next{
+        background-color: transparent;
+        border: none;
+    }
+    #footer-butterfly img{
+        width: 20%;
+    }
+}
+@media (width<475px){
+    .bir004-gallery-pictures-pc{
+        height: 600px;
+    }
+}
+@media (width<400px){
+    .bir004-gallery-pictures-pc{
+        height: 500px;
+    }
+}

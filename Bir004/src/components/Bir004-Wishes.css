@@ -1,7 +1,7 @@
 #bir004-wishes{
     padding: 9.6rem 0;
     background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
-
+    position: relative;
 }
 .bir004-wish-headmain{
     display: flex;
@@ -141,6 +141,9 @@
     padding: 2% 0;
     border-radius: 10px;
 }
+#wishdisplaysection img{
+    display: none;
+}
 .bir004-wishes-display-header{
     font-size: 4rem;
     font-family: 'Mauline';
@@ -172,4 +175,95 @@
 }
 .bir004-wishes-display-message h2{
     color: #FFE9C8;
+}
+#bir004-wish-bl{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 10%;
+
+}
+#bir004-wish-br{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 10%;
+
+}
+#bir004-wish-tr{
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 1;
+    width: 10%;
+}
+#bir004-wish-tl{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 10%;
+}
+#bir004-wish-bm{
+    position: absolute;
+    bottom: 0;
+    left:25%;
+    width: 10%;
+}
+#bir004-wish-tr1{
+    position: absolute;
+    top: 0;
+    right:0%;
+    z-index: 0;
+    width: 15%;
+}
+@media(width<650px){
+    .bir004-wishes-head{
+        font-size: 3rem;
+    }
+    #bir004-wishes-message-entry,#bir004-wishes-name-entry{
+        font-size: 1.5rem;
+    }
+    .bir004-wishes-content-main{
+        flex-direction: column;
+    }
+    .bir004-wishes-content-entrysection{
+        width: 80%;
+        justify-content: center;
+        margin: 5% 10%;
+    }
+    .bir004-wishes-display-section{
+        width: 80%;
+        margin: 0 10%
+    }
+    #wishdisplaysection{
+        position: relative;
+    }
+    #wishdisplaysection img{
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20%;
+    }
+    .bir004-wish-content-sendbutton span{
+        font-size: 1.5rem;
+    }
+    .bir004-wishes-display-header{
+        font-size: 3rem;
+    }
+    .bir004-wishes-display-message p{
+        font-size: 1.8rem;
+    }
+    .bir004-wishes-display-message h2{
+        font-size: 2rem;
+    }
+    #bir004-wish-tr,#bir004-wish-tl,#bir004-wish-bm,#bir004-wish-tr1{
+        width: 20%;
+    }
+    #bir004-wish-bl{
+        width: 25%;
+    }
+    #bir004-wish-br{
+        display: none;
+    }
 }

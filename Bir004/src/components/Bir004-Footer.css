@@ -1,0 +1,34 @@
+#bir004-Footer{
+    padding: 9.6rem 0;
+    position: relative;
+}
+.bir004-footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin: 5% 0;
+}
+.bir004-footer-sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.bir004-footer-sub h2{
+    font-family: 'Rachel Roman';
+    background: linear-gradient(180deg, #FFC265 0%, #DFB181 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    margin-top: 3%;
+}
+.bir004-footer-sub img{
+    width: 100%;
+}
+@media(width<650px){
+    .bir004-footer-sub h2{
+        font-size: 2rem;
+    }
+}

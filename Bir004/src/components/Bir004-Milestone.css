@@ -1,0 +1,113 @@
+#bir004-milestone{
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    padding: 9.6rem 0;
+    position: relative;
+}
+.bir004-milestone-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5% 0;
+}
+#bir004-milestone-hedding{
+    display: flex;
+    position: relative;
+}
+#bir004-milestone-hedding h1{
+    font-family: 'Rachel Italic';
+    background: linear-gradient(90deg, #E3B268 0%, #BE803F 55.97%, #A86227 100%, #A5460A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6rem;
+    padding: 0 7%;
+}
+#bir004-milestone-hedding h2{
+    font-family: 'Rachel Roman';
+    font-size: 3rem;
+    color: #FFE9C8;
+    position: absolute;
+    top: -50%;
+}
+.bir004-selection-main{
+    display:flex;
+    width: 100%;
+    margin: 5% 0;
+}
+.bir004-selections{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 2%;
+}
+.bir004-selections button{
+    font-family: 'Wittgenstein';
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 5%; 
+    color: #FFE9C8;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-top: 1px solid #FFE9C8;
+    border-bottom: 1px solid #FFE9C8;
+}
+#ref{
+    position: relative;
+}
+#pics{
+    position: absolute;
+    right:30%;
+    top: -35%;
+    width: 30%;
+}
+.bir004-pictures img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Increased duration */
+}
+
+.bir004-pictures img.fade-in {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+.bir004-pictures img.fade-out {
+    opacity: 0;
+    animation: fadeOut 0.5s ease-in-out forwards; /* Apply fade-out animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.bir004-selections button.selected {
+    background: linear-gradient(90deg, #E3B268 0%, #BE803F 55.97%, #A86227 100%, #A5460A 100%);
+    color: white;
+  }
+  #bir004-milestone-circle1, #bir004-milestone-circle2, #bir004-milestone-circle3 {
+    position: absolute;
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+}
+
+#bir004-milestone-circle1 {
+    top: 10%;
+    left: 10%;
+}
+
+#bir004-milestone-circle2 {
+    top: 10%;
+    right: 10%;
+}
+
+#bir004-milestone-circle3 {
+    bottom: 10%;
+    left: 10%;
+}

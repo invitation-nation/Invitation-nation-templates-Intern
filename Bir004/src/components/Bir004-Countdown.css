@@ -75,6 +75,7 @@
     padding: 5%;
     
 }
+
 .bir004-sticks{
     width: 100px;
     border: 1.76px solid;
@@ -83,9 +84,20 @@
 #image{
     position: relative;
 }
-#stick1{
-    position: absolute;
-    top:0;
+#bir004-bgirlimage-bg{
+    background-size: cover;
+    position: absolute; 
+    width: 140%;
+    height: 123%;
+    top: -21%; 
+    left: -16%;
+    z-index: -1;
+    animation: changeImage 3.5s infinite;
+}
+@keyframes changeImage {
+    0% { background-image: url('../assets/img/Bir004-Countdown/aboutbg1.svg'); }
+    50% { background-image: url('../assets/img/Bir004-Countdown/aboutbg2.svg'); }
+    100% { background-image: url('../assets/img/Bir004-Countdown/aboutbg1.svg'); }
 }
 .bir004-aboutdetails {
     display: flex;
@@ -284,6 +296,12 @@
 
     .bir004-aboutdetails.scrolled .bir004-bgirlimage {
         transform: translateY(-50%); /* Move the image up */
+    }
+    #bir004-bgirlimage-bg{
+        width: 112%;
+        height: 136%;
+        top:-23%;
+        left:-6%;
     }
 }
 

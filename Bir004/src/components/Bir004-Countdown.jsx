@@ -1,12 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useRef,useEffect } from 'react';
 import './Bir004-Countdown.css';
+import { Link } from 'react-router-dom';
 import countline from '../assets/img/Bir004-Countdown/countdownline.svg';
 import birthdaygirl from '../assets/img/Bir004-Countdown/Aboutimage.png';
+import aboutbg1 from '../assets/img/Bir004-Countdown/aboutbg1.svg';
+import aboutbg2 from '../assets/img/Bir004-Countdown/aboutbg2.svg';
 import topleft from '../assets/img/Bir004-Countdown/about-ballon-topleft.svg';
 import bottomleft from '../assets/img/Bir004-Countdown/about-circle-bottomleft.svg';
 import bottomright from '../assets/img/Bir004-Countdown/aboutcircle-bottomright.svg';
 import rightmid from '../assets/img/Bir004-Countdown/aboutcirlcle1-rightmid.svg';
 function Bir004_Countdown() {
+    const aboutDetailsRef = useRef(null);
+  const bgImageRef = useRef(null);
+
+  useEffect(() => {
+    if (aboutDetailsRef.current && bgImageRef.current) {
+      const { offsetWidth, offsetHeight } = aboutDetailsRef.current;
+      bgImageRef.current.style.width = `${offsetWidth}px`;
+      bgImageRef.current.style.height = `${offsetHeight}px`;
+    }
+  }, []);
         useEffect(() => {
             const handleScroll = () => {
                 if (window.innerWidth < 650) {
@@ -77,7 +90,10 @@ function Bir004_Countdown() {
                 </div>
                 <div className="bir004-aboutdetails">
                     <div id='image' className="bir004-bgirlimage">
-                        <img src={birthdaygirl} alt="" />   
+                        <img src={birthdaygirl} alt="" />
+                        <div id='bir004-bgirlimage-bg'>
+                        </div> 
+
                     </div>
                     <div className="bir004-details">
                        <div className="bir004-bghead">
@@ -89,9 +105,9 @@ function Bir004_Countdown() {
                         of sparkle and joy! Let's make this milestone birthday unforgettable with laughter, love, 
                         and plenty of fun. Your presence will make the day truly special!
                         </p>
-                        <a href="" className="bir004-about-highlightbutton">
+                        <Link to='/milestone' className="bir004-about-highlightbutton">
                             <span>HIGHLIGHTS</span>
-                        </a>
+                        </Link>
                      </div>
                 </div>
             </div>
