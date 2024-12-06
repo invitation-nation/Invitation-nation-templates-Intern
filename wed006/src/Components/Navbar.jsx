@@ -12,15 +12,13 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/">
-            <a href="">About</a>
-          </Link>
+          <Link to="/nayana-weds-punith/about">About</Link>
         </li>
         <li>
           <Link to="/nayana-weds-punith/gallery">Gallery</Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/nayana-weds-punith/schedule">
             <a href="">Schedule</a>
           </Link>
         </li>

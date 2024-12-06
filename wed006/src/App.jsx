@@ -5,6 +5,8 @@ import "./App.css";
 import Homepage from "./Main pages/Homepage";
 import Gallery from "./Main pages/Gallery";
 import Preloader from "./Components/Preloader";
+import About from "./Main pages/about";
+import SchedulePage from "./Main pages/SchedulePage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +27,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/nayana-weds-punith/gallery" element={<Gallery />} />
+            <Route path="/nayana-weds-punith/about" element={<About />} />
+            <Route
+              path="/nayana-weds-punith/schedule"
+              element={<SchedulePage />}
+            />
           </Routes>
         </div>
       </Router>

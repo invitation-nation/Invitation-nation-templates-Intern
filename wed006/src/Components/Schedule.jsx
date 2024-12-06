@@ -6,6 +6,7 @@ import BackgroundClouds from "../assets/schedule-section/background-clouds.png";
 import GoldenFence from "../assets/schedule-section/golden-fence.png";
 import ArrowBack from "../assets/schedule-section/arrow-back.svg";
 import ArrowForward from "../assets/schedule-section/arrow-forwards.svg";
+import frameimage from "../assets/Frame 283.png";
 import "./Schedule.css";
 
 const groomEvents = [
@@ -85,7 +86,7 @@ const Schedule = () => {
                   <div className="schedule-control-left" onClick={handlePrev}>
                     <img src={ArrowBack} alt="Previous" />
                   </div>
-                  <div className="schedule-control-rfight" onClick={handleNext}>
+                  <div className="schedule-control-right" onClick={handleNext}>
                     <img src={ArrowForward} alt="Next" />
                   </div>
                 </div>
@@ -100,6 +101,7 @@ const Schedule = () => {
                   </div>
                 </div>
               </div>
+              <img src={frameimage} className="schedule-frameimage" alt="" />
             </div>
           </div>
         </div>
