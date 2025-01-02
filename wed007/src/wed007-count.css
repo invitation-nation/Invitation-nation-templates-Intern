@@ -1,0 +1,131 @@
+#wed007-count-down-section {
+    
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+overflow: hidden;
+position: relative;
+
+background-size: 100%;
+
+
+    
+  }
+  .wed007-hero-count-down-container{
+    display: none;
+  }
+  #wed007-underl{
+    width:100%;
+  }
+
+  
+  .wed007-count-down-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    position: absolute;
+    top: 15%;
+    margin-left: 12%;
+  }
+  
+  .wed007-count-down-title {
+    color: #fff;
+    font-size: 6rem;
+    text-align: center;
+    font-family: Ogg;
+  }
+  
+  .wed007-count-down-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+   
+   
+  .wed007-count-down-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    background-color: #fff;
+    width:15%;
+    border-radius: 10px;
+  }
+  .wed007-count-down-number {
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+   -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-size: 5.5rem;
+  }
+  
+  .wed007-count-down-text {
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+    -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    font-size: 3.2rem;
+    font-family: Singel-Trial;
+  }
+#wed007-underline{
+  margin-left: 25%;
+  width:50%;
+}
+#wed007-leaf{
+position: absolute;
+top:10%;
+margin-left: 80%;
+}
+
+  .wed007-count-background{
+    background-color: #fff;
+  }
+  .wed007-break{
+    font-size:7rem;
+    color: #fff;
+    margin:0 3%;
+  }
+  @media (width<=650px) {
+    .wed007-count-down-number {
+      font-size:2.8rem ;
+    }
+    .wed007-count-down-title {
+      font-size: 1.4rem;}
+      #wed007-underl{
+        display: none;
+      }
+  }
+
+  
+  @media (width<=900px) {
+    .wed007-count-down-number {
+      font-size: 4.8rem;
+    }
+  
+    .wed007-count-down-text {
+      font-size: 2.4rem;
+      border-radius: 25px;
+    }
+   
+  }  
+  @media (width<650px) {
+    #wed007-count-down-section{
+      display: none;
+    }
+    .wed007-hero-count-down-container{
+      position: relative;
+      display: inline;
+      z-index: 2;
+      margin-left: 0;
+      padding: 5% 0 0 0;
+    }
+    .wed007-count-down-title{
+      font-size: 3.4rem;
+    }
+    .wed007-count-down-elements{
+      padding: 5% 0 0 0;
+    }
+    .wed007-count-down-number{
+      font-size: 4rem;
+    }
+    .wed007-count-down-text{
+      font-size: 2rem;
+    }
+  }

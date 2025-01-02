@@ -1,0 +1,158 @@
+#wed007-wish-section{
+    position: relative;
+    background-image: url('assets/img/wed007-wishes/Wishes-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding: 9.6rem 0;
+  
+}
+
+.wed007-wish-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.wed007-peacock img{
+    position: absolute;
+    left: -17%;
+    top: -28%;
+    width: 20%;
+}
+#wed007-wish{
+    font-family: ogg;
+    font-size: 8rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.wed007-wave{
+    width:30%;
+}
+.wed007-couple{
+    width:50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1%;
+}
+#wed007-wbride{
+    font-family: Singel-Trial;
+    font-size: 2rem;
+    background-color: #fff;
+    color:#ED566F ;
+    border-radius: 25px;
+    width:25%;
+    padding: 1.5% 8%;
+    display: flex;
+    justify-content: center;
+}
+#wed007-wgroom{
+    font-family: Singel-Trial;
+    font-size: 2rem;
+    background-color:  var(--Green, #4C655E);
+    color: #fff;
+    border-radius: 25px;
+    width:25%;
+    padding: 1.5% 8%;
+    display: flex;
+    justify-content: center;
+}
+.wed007-wishes-content{
+    background-color: #fff;
+    width:75%;
+    margin: 5%;
+    border:1px solid #4C655E;
+    border-radius: 25px;
+    position: relative;
+}
+.wed007-wish-content{
+    display: flex;
+    flex-direction: column;
+   background-color: #fff;
+   align-items: center;
+   margin: 8% 3%;
+   background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.wed007-gautam{
+    width: 10%;
+}
+#wed007-wisher{
+font-family: 'Ogg';
+font-size: 3rem;
+font-weight: 1000;
+padding: 2% 0;
+}
+#wed007-gautam-wish{
+    font-family:Singel-Trial;
+    font-size: 2.9rem;
+    text-align: center;
+    
+}
+.wed007-wish-open{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    width:20%;
+    text-decoration: none;
+    background: #fff;
+    padding: 1% 0;
+    margin-bottom: 5%;
+   
+}
+#wed007-wish-button1{
+    text-align: center;
+    text-decoration: none;
+    font-family: Singel-Trial;
+    width:60%;
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+}
+@media(width<1000px){
+    #wed007-wish{
+        font-size: 6rem;
+    }
+}
+@media(width<650px){
+    #wed007-wish{
+        font-size: 4rem;
+    }
+    .wed007-wave{
+        width:50%;
+    }
+    .wed007-gautam{
+        width: 20%;
+    }
+    .wed007-wishes-content{
+        width:90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wed007-peacock img{
+        left: -10%;
+        top: -15%;
+    }
+    #wed007-wisher{
+        font-size: 3rem;
+    }
+    .wed007-wish-content{
+        width: 80%;
+    }
+    #wed007-gautam-wish{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .wed007-wish-open{
+        width: 60%;
+    }
+    .wed007-couple{
+        width: 70%;
+    }
+}

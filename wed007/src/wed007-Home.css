@@ -1,0 +1,19 @@
+/* Add this to your CSS file */
+.no-scroll {
+    overflow: hidden;
+}
+
+.content.loading {
+    pointer-events: none; /* Disable interactions with the content while loading */
+    opacity: 0.5; /* Optional: Dim the content while loading */
+}
+
+#wed007-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Ensure the preloader is on top */
+    background: white; /* Optional: Add a background color to the preloader */
+}

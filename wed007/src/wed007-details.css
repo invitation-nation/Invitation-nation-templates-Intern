@@ -1,0 +1,112 @@
+ #wed007-details-section{
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+    position: relative;
+    width:100%;
+    padding: 9.6rem 0;
+}
+#wed007-details-leftdecoration{
+    position: absolute;
+    width: 25%;
+    bottom:0;
+}
+#wed007-details-rightdecoration{
+    position: absolute;
+    right:0%;
+   bottom:0%;
+    width:22%;
+}
+.wed007-info-details{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wed007-conloc{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+} 
+.wed007-contact{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 3% 5%;
+    margin: 10% 1% 3% 1%;
+    border-radius: 90px;
+}
+.wed007-location2{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 3% 5%;
+    margin:  10% 1% 3% 1%;
+    border-radius: 90px;
+}
+
+.wed007-calendar{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 3% 5%;
+    margin:  3% 1% 10% 1%;
+    border-radius: 90px;
+}
+.wed007-gal{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 3% 6%;
+    margin:  3% 3% 10% 1%;
+    border-radius: 90px;
+}
+
+.wed007-info-details span{
+    font-family: ogg;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+ .wed007-info-details img{
+    width:23%;
+}  
+
+@media(width>1600px){
+    #wed007-details-leftdecoration,#wed007-details-rightdecoration{
+        width:20%;
+    }
+}
+@media(width>1800px){
+    #wed007-details-leftdecoration,#wed007-details-rightdecoration{
+        width:15%;
+    }
+}
+@media(width>2150px){
+    #wed007-details-leftdecoration,#wed007-details-rightdecoration{
+        width:13%;
+    }
+} 
+@media(width<650px){
+    .wed007-conloc{
+        flex-direction: column;
+    }
+    .wed007-contact,.wed007-location2,.wed007-calendar,.wed007-gal{
+        margin: 2% 0;
+        width: 60%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .wed007-info-details img{
+        width:15%;
+    }
+    .wed007-info-details span{
+        font-size: 2rem;
+    }
+    #wed007-details-leftdecoration{
+        top: 0;
+    }
+}   

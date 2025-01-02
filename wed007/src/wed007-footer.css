@@ -1,0 +1,51 @@
+#wed007-footer-section{
+    padding:9.8rem 0;
+}
+.wed007-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wed007-website{
+    display: flex;
+    flex-direction: column;
+}
+.wed007-wedding{
+    font-family: singel-trail;
+    font-size: 4rem;
+    color: var(--green-1, #4C655D);
+
+}
+.wed007-span{
+    font-family: singel-trail;
+    font-size: 3.5rem;
+    text-align: center;
+     color: var(--green-1, #4C655D);
+    
+}
+.wed007-invitation{
+    display: flex;
+    flex-direction: column;
+}
+#wed007-logo{
+    width:20%;
+    margin: 5% 40%;
+}
+.wed007-span2{
+    font-family: loversQuarrel;
+    font-size: 7.5rem;
+    text-align: center;
+    color: var(--green-1, #4C655D);
+
+}
+@media (width<=650px){
+    .wed007-wedding{
+        font-size: 3rem;
+    }
+    .wed007-span{
+        font-size: 2.5rem;
+    }
+    .wed007-span2{
+        font-size: 5rem;
+    }
+}

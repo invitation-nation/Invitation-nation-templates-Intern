@@ -1,0 +1,174 @@
+#wed007-nav-section{
+  position: relative;
+  padding: 9.6rem 0 0 0;
+  
+}
+#wed007-herobackground{
+    position: absolute;
+    top: -5%;
+    width: 100%;
+    z-index: -1;
+}
+#wed007-mobiledecoration{
+    display: none;
+}
+.wed007-navbar{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    font-family: Singel-Trial;
+}
+.wed007-navbar a{
+    padding: 1% 3%;
+    text-decoration: none;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+#middle{
+    width:10%
+   
+}
+
+.wed007-decoration{
+    display: flex;
+}
+.wed007-decoration img{
+    width:50%;
+    top:0%;
+    
+}
+.content{
+    
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.content img{
+    width:75%;
+}
+#wed007-ganesh{
+    width:30%;  
+}
+#wed007-ganesh,#wed007-hero1,#wed007-hero3,#wed007-hero4{
+    padding:3%;
+}
+#wed007-nametop ,#wed007-namebottom{
+    width:75%;
+}
+
+#wed007-hero1{
+    font-size: 4rem;
+}
+#wed007-hero2{
+    font-size: 8.2rem;
+}
+#wed007-hero3{
+    font-family: ogg;
+    font-size: 4rem;
+}
+#wed007-hero4{
+    font-size: 3rem;
+}
+.wed007-info-event-box{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Singel-Trial;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.wed007-map{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.wed007-map:hover{
+    border:3px solid #830909;}
+#wed007-mapleft{
+    width:20%;
+}
+#wed007-mapright{
+    width:20%;
+}
+#wed007-mobile-background{
+    display: none;
+}
+#wed007-button{
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+   -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.7rem;
+}
+.wed007-map a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+@media (width<=650px){
+    #wed007-nav-section{
+        position: relative;
+        padding: 9.6rem 0;
+        
+      }
+    #wed007-navbarsec{
+        display: none;
+    }
+    #wed007-herobackground{
+        display: none;
+    }
+    #wed007-mobiledecoration{
+        position: absolute;
+        top: -10%;
+        display: flex;
+        width: 120%;
+        left: -15%;
+    }
+    .wed007-info-event-box{
+        position: relative;
+        z-index: 2; 
+        padding: 60% 0 0 0;
+    }
+    #wed007-hero1{
+        font-size: 3.5rem;
+    }
+    #wed007-background{
+        display: none;
+    }
+    #wed007-mobile-background{
+        display:flex;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        
+    }
+    #wed007-hero2{
+        font-size: 5.5rem;
+        font-weight: bold;
+    }
+    #wed007-nametop, #wed007-namebottom {
+        width:40%;}
+        #wed007-ganesh, #wed007-hero1, #wed007-hero3{
+            padding: 0%;
+        }
+        #wed007-ganesh{
+            width:30%;
+        }
+        #wed007-hero3{
+            font-size: 3.5rem;
+        }
+        #wed007-hero4{
+            font-size: 2.5rem;
+        }
+    
+        .content {
+            flex-direction: column;
+            width: 100%;
+        }
+}

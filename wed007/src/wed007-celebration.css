@@ -1,0 +1,201 @@
+#wed007-celebration-section{
+    position: relative;
+    background-image: url('./assets/img/wed007-celebration/Venue.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 9.6rem 0;
+}
+.wed007-celebration{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15% ;
+    padding-bottom: 2%;
+    z-index: 1;
+    position: relative;
+    align-items: center;
+}
+#wed007-backg{
+    width:80%;
+    margin: 0 10%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.wed007-details{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wed007-date{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#wed007-join ,#wed007-feb{
+    font-family: ogg;
+    font-size: 5.5rem;
+    color: var(--Green, #4C655E);
+    font-weight: 700;
+}
+.wed007-uline{
+    width:50%;
+}
+.wed007-location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#wed007-loc,#wed007-fac{
+    font-size: 3rem;
+    font-family: ogg;
+    color: #99002C;
+    padding:1%;
+}
+#wed007-address{
+    font-family:  Singel-Trial;
+    font-size: 2.5rem;
+    width:80%;
+    color: var(--Green, #4C655E);
+}
+.wed007-items{
+    width:90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.wed007-items span{
+    font-family:  Singel-Trial;
+    font-size: 2rem;
+    color: var(--Green, #4C655E);
+   padding: 5px 1.5%;
+   border:2px solid #99002C;
+   border-radius: 25px;
+}
+
+.wed007-open{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    width:25%;
+}
+.wed007-open:hover{
+    border:3px solid #830909;}
+#wed007-left{
+    width:15%;
+}
+#wed007-right{
+    width:15%;
+}
+#wed007-button1{
+    text-align: center;
+    text-decoration: none;
+    width:32%;
+    color: #fff;
+        font-size: 1.7rem;
+}
+    
+.wed007-celebration a{
+    color: #fff;
+    border:2px solid ;
+    background: linear-gradient(90deg, #99002C 0%, #ED566F 100%);
+    margin-top: 5% ;
+    text-decoration: none;
+   
+}
+.wed007-celebration-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+#wed007-button2{
+    
+    font-family: Singel-Trial;
+    font-size:2rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+#wed007-button2 a{
+    text-decoration: none;
+    border:2px solid ;
+    padding: 1.5%;
+    display: flex;
+    border-radius: 50px;
+    width: 50%;
+}
+#wed007-button2 span{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.wed007-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: flex-end;
+}
+.wed007-morebutton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media(width>1600px){
+    .wed007-celebration{
+        padding-top: 20%;
+    }
+}
+@media(width>1900px){
+    .wed007-celebration{
+        padding-top: 30%;
+    }
+}
+@media (width<1000px){
+    .wed007-celebration{
+        padding-top: 10%;
+    }
+    #wed007-join, #wed007-feb{
+        font-size: 4rem;
+    }
+    #wed007-loc, #wed007-fac{
+        font-size: 2.5rem;
+    }
+    #wed007-address{
+        font-size: 2rem;
+    }
+    .wed007-items span{
+        font-size: 1.75rem;
+    }
+    #wed007-button2 span {
+        font-size: 1.75rem;
+    }
+}
+@media(width<650px){
+    #wed007-backg{
+        width: 180%;
+        margin: 0;
+        left: -40%;
+        top: 5%;
+    }
+    #wed007-join, #wed007-feb{
+        font-size: 3rem;
+    }
+    .wed007-celebration{
+        padding-top: 30%;
+    }
+    .wed007-celebration-buttons{
+        flex-direction: column;
+    }
+    #wed007-button2 {
+        width: 90%;
+    }
+}
