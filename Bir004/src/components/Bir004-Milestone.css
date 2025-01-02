@@ -2,12 +2,15 @@
     background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
     padding: 9.6rem 0;
     position: relative;
+    overflow: hidden;
 }
 .bir004-milestone-main{
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100%;
     padding: 5% 0;
+    z-index: 1;
 }
 #bir004-milestone-hedding{
     display: flex;
@@ -32,6 +35,7 @@
     display:flex;
     width: 100%;
     margin: 5% 0;
+    
 }
 .bir004-selections{
     display: flex;
@@ -94,20 +98,18 @@
   }
   #bir004-milestone-circle1, #bir004-milestone-circle2, #bir004-milestone-circle3 {
     position: absolute;
-    transition: all 0.5s ease-in-out; /* Smooth transition */
+    transition: transform 0.5s ease-in-out;
+    z-index: 0; /* Smooth transition */
 }
 
 #bir004-milestone-circle1 {
-    top: 10%;
-    left: 10%;
+    transform: translate(10%, 10%);
 }
 
 #bir004-milestone-circle2 {
-    top: 10%;
-    right: 10%;
+    transform: translate(-10%, 10%);
 }
 
 #bir004-milestone-circle3 {
-    bottom: 10%;
-    left: 10%;
+    transform: translate(10%, -10%);
 }

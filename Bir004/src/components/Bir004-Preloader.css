@@ -1,0 +1,63 @@
+#bir004-preloader {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.center {
+    width: 200px; /* Initial size */
+    height: 200px; /* Initial size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    cursor: pointer;
+}
+
+.wave {
+    background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
+    position: absolute;
+    top: 110%; /* Start the wave below the circle */
+    height: 200%;
+    width: 200%;
+    border-radius: 38%;
+    left: -50%;
+    transform: rotate(360deg);
+    transition: all 1s ease; /* Reduce the transition duration */
+    animation: wave 5s linear 1 forwards; /* Reduce the animation duration and set it to run once */
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); top: 110%; } /* Start below the circle */
+    100% { transform: rotate(900deg); top: 0%; } /* Move to the top */
+}
+
+.screen-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
+    opacity: 0;
+    animation: fadeIn 1s ease 5s forwards; /* Start after the wave animation */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

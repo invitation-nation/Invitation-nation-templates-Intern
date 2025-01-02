@@ -1,4 +1,4 @@
-import React, { useRef,useEffect } from 'react';
+import React, { useRef,useEffect,useState } from 'react';
 import './Bir004-Countdown.css';
 import { Link } from 'react-router-dom';
 import countline from '../assets/img/Bir004-Countdown/countdownline.svg';
@@ -41,6 +41,43 @@ function Bir004_Countdown() {
                 window.removeEventListener('scroll', handleScroll);
             };
         }, []);
+        const calculateTimeLeft = () => {
+            const targetDate = new Date('2025-12-02T15:00:00'); // Replace with your target date
+            const now = new Date();
+            const difference = targetDate - now;
+        
+            let timeLeft = {};
+        
+            if (difference > 0) {
+              timeLeft = {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / 1000 / 60) % 60),
+                seconds: Math.floor((difference / 1000) % 60),
+              };
+            } else {
+              timeLeft = {
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
+              };
+            }
+        
+            return timeLeft;
+          };
+          const formatNumber = (number) => {
+            return number < 10 ? `0${number}` : number;
+          };
+          const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+        
+          useEffect(() => {
+            const timer = setInterval(() => {
+              setTimeLeft(calculateTimeLeft());
+            }, 1000);
+        
+            return () => clearInterval(timer);
+          }, []);
   return (
     <>
     <section id="bir004-countdown">
@@ -52,7 +89,7 @@ function Bir004_Countdown() {
             <div className="bir004-counting">
                 <div className="bir004-count-item">
                     <div className="bir004-countnum">
-                        <h1>00</h1>
+                        <h1>{formatNumber(timeLeft.days)}</h1>
                     </div>
                     <div className="bir004-countq">
                         DAYS
@@ -60,7 +97,7 @@ function Bir004_Countdown() {
                 </div>
                 <div className="bir004-count-item">
                     <div className="bir004-countnum">
-                        <h1>00</h1>
+                        <h1>{formatNumber(timeLeft.hours)}</h1>
                     </div>
                     <div className="bir004-countq">
                         HOURS
@@ -68,7 +105,7 @@ function Bir004_Countdown() {
                 </div>
                 <div className="bir004-count-item">
                     <div className="bir004-countnum">
-                        <h1>00</h1>
+                        <h1>{formatNumber(timeLeft.minutes)}</h1>
                     </div>
                     <div className="bir004-countq">
                         MINUTES
@@ -76,7 +113,7 @@ function Bir004_Countdown() {
                 </div>
                 <div className="bir004-count-item">
                     <div className="bir004-countnum">
-                        <h1>00</h1>
+                        <h1>{formatNumber(timeLeft.seconds)}</h1>
                     </div>
                     <div className="bir004-countq">
                         SECONDS

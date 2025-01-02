@@ -1,0 +1,98 @@
+
+.bir004-nav-toggle {
+    position: fixed;
+    top:1%;
+    right: 1%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+.bir004-nav-menu{
+    display: flex;
+    flex-direction: column;
+}
+.bir004-close-nav {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bir004-mnavbar{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
+    right: 0;
+    top: 0;
+    padding: 5%;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bir004-nav-open {
+    transform: translateX(0); /* Move the navbar into view */
+    overflow: hidden;
+}
+
+.bir004-nav-toggle{
+    border: none;
+    background-color: transparent;
+}
+.bir004-navbutton-collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20%;
+    width: 100%;
+    align-items: center;
+}
+.bir004-navbutton-collection img{
+    margin-top: 20%;
+    width: 50%;
+}
+.bir004-navbutton{
+    background-color: #FFE9C8;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Rachel Roman';
+    font-weight: 400;
+    font-size: 4rem;
+    color: #B55200;    
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width:90%;
+    justify-content: center;
+    border: 3px solid #B55200;
+    padding: 2% 0;
+    margin: 5% ;
+    transition: background-color 0.3s ease;
+}
+.bir004-navbutton span {
+    transition: color 0.3s ease;
+}
+.bir004-navbutton a{
+    text-decoration: none;
+    color: #B55200;
+}
+.bir004-navbutton:hover span {
+    color: #FFFFFF;
+}
+.bir004-navbutton:hover{
+    background: linear-gradient(308.14deg, #502F00 22.27%, #663C00 92.58%);
+    color: #FFFFFF;
+}
+
+@media(min-width:651px){
+    .bir004-mnavbar{
+        display: none;
+    }
+    .bir004-nav-toggle {
+        display: none;
+    }
+}

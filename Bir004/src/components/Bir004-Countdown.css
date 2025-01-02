@@ -2,7 +2,7 @@
     background: linear-gradient(179.51deg, #D79F4C -2.58%, #BE803F 54.56%, #A86227 99.51%, #A5460A 99.51%);
     padding: 9.6rem 0;
     position: relative;
-    z-index: 12;
+    z-index: 8;
 }
 .bir004-countdown-header{
     text-align: center;
@@ -278,6 +278,10 @@
     }
     .bir004-bgirlimage img{
         width: 70%; 
+    }
+    .bir004-aboutdetails:hover .bir004-details {
+        left: auto;
+        opacity: initial;
     }
     .bir004-details {
         top: 100%; 
