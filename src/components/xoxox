@@ -1,0 +1,107 @@
+import './about.css'
+import floraldrop from "../assets/img/hou003-About/floral-drop.svg"
+import horizantalflowerbar from "../assets/img/hou003-About/horizantalfloralpattern.svg"
+import flowerdesignemblem from "../assets/img/hou003-About/floweremblem.svg"
+import familydetails from "../assets/img/hou003-About/hou003-about-familyphoto.svg"
+
+function About() {
+    return (
+        <>
+        <section id='hou003-About'>
+            
+            <img src= {floraldrop} alt='flowers-hanging' className='left-top-flowerdrop'/>
+
+            <div className='nimbus-container'>
+                <div className='hou003-about-content'>
+
+                    <img src= {familydetails} alt='family-photo' className='hou003-about-familydetailsimage'/>
+
+                    <div className='about-text'>
+                        <h2>Mr. Aryan Singh & Family</h2>
+                        <h3>Welcome You and your family</h3>
+                        <h3>to join the celebration.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <img src= {flowerdesignemblem} alt='emblem-design' className='flower-emblem-design' />
+
+            <img src= {horizantalflowerbar} alt='flower-bar' className='horizontal-flower-bar' />
+
+        </section>
+        </>
+    );
+}
+
+export default About
+
+
+#hou003-About{
+  background-color: #0B4246;
+  position: relative;
+  height: 150vh;
+  z-index: -1;
+}
+
+.hou003-about-content {
+  position: absolute;
+  z-index: 1;
+}
+
+.left-top-flowerdrop {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  left: -6%;
+  margin-top: 2%;
+}
+
+  .about-text {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10%;
+      right: 15%;
+  }
+
+      .about-text h2 {
+          font-family: 'Stardos Stencil';  
+          font-size: 34px;
+          font-weight: 400;
+          color: #ffffff;
+          padding-bottom: 3%;
+      }
+
+      .about-text h3 {
+          font-family: 'Stardos Stencil';
+          font-size: 28px;
+          font-weight: 400;
+          color: #FF7500;
+          padding: 3%;
+      }
+
+  .hou003-about-familydetailsimage {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+  }    
+  
+  .flower-emblem-design {
+      z-index: 0;
+      position: absolute;
+      width: 25%;
+      margin-top: 33%;
+      left: -12.5%;
+      align-items: flex-end;
+  }  
+
+  .horizontal-flower-bar {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      margin-top: 50%;
+      align-items: flex-start;
+  }

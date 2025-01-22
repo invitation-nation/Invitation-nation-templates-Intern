@@ -1,0 +1,28 @@
+#hou003-Invitation {
+    height: 55vh;
+    background: linear-gradient(to bottom, #f9e5b3, #ffffff);
+}
+
+.hou003-Invitation-container {
+    padding-top: 7%;
+    transform: translateX(30%);
+}
+
+ .hou003-Invitation-container p {
+    font-family: 'Flamenco';
+    font-size: 29.3px;
+    font-weight: 400;
+    color: #000000;
+ }
+
+ .hou003-Invitation-container a {
+    font-family: 'Fjalla';
+    font-size: 29.3px;
+    font-weight: 400;
+    color: #A60035;
+ }
+
+ .hou003-Invitation-container img {
+    padding: 5%;
+    margin-left: 7%;
+ }

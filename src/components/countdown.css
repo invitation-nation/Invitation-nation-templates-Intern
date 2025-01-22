@@ -1,0 +1,123 @@
+#hou003-Countdown{
+  background-color: #0B4246;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+.hou003-countdown {
+    background-color: #0B4246; 
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .hou003-countdown h1 {
+    font-family: 'Stardos Stencil';
+    font-size: 4rem;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 2%;
+  }
+  
+  .hou003-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+  }
+  
+  .hou003-time-unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    font-family: 'Stardos Stencil';
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  
+  .hou003-separator {
+    justify-content: flex-end;
+    align-items: center;
+    width: 0.5rem; 
+    height: 5rem; 
+    background-color: white; 
+    position: relative;
+  } 
+  
+  .hou003-separator:first-child {
+    display: none; 
+  }
+  
+  .hou003-time-unit div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Stardos Stencil';
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .hou003-time-unit span {
+    font-family: 'Stardos Stencil';
+    size: 3rem;
+    color: #ffffff; 
+  }
+
+  .hou003-time-left {
+    font-family: 'Stardos Stenicl';
+    size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  @media(width<650px) {
+    .hou003-countdown h1 {
+      font-size: 2rem;
+    }
+
+    .hou003-separator {
+      width: 0.3rem; 
+      height: 2rem; 
+    } 
+
+    .hou003-time-unit div {
+      font-size: 1rem;
+    }
+
+    .hou003-time-unit span {
+      size: 2rem; 
+    }
+
+    .hou003-time-left {
+      size: 1rem;
+    }
+  }
+
+  @media(width<1000px) {
+    .hou003-countdown h1 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .hou003-separator {
+      width: 0.4rem; 
+      height: 3rem; 
+    } 
+
+    .hou003-time-unit div {
+      font-size: 2rem;
+    }
+
+    .hou003-time-unit span {
+      size: 1rem;
+    }
+
+    .hou003-time-left {
+      size: 2rem;
+      font-weight: 400;
+    }
+  }
+  

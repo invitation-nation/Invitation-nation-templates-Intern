@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Blessed Day';
+    src: url(./assets/fonts/BLESD.ttf);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+html {
+    font-size: 62.5%;
+}
+.nimbus-container {
+    max-width: 128rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+@media (width<=900px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (width<=650px) {
+    html {
+        font-size: 50%;
+    }
+    .nimbus-container {
+        padding: 0 1.6rem;
+    }
+}

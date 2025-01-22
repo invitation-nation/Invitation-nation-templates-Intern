@@ -1,0 +1,294 @@
+#hou003-About {
+    background-color: #0B4246;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+ .hou003-about-topfloraldrop {
+    position: relative;
+    z-index: 2;
+    margin-top: 2%;
+    left: -5.5%;
+ }
+
+ .hou003-about-firsthalf {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .hou003-about-familydetails {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -11%;
+ }
+
+    .hou003-about-familyphoto {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hou003-about-familydetails h3 {
+        font-family: 'Blessed Day';
+        font-size: 52px;
+        font-weight: 400;
+        color: #ffffff;
+        padding-top: 5%;
+        padding-left: 22%;
+    }
+
+ .hou003-about-welcoming-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -13%;
+    margin-left: 15%;
+ }
+
+    .hou003-about-welcoming-text h2{
+        font-family: 'Stardos Stencil';
+        font-size: 34px;
+        font-weight: 400;
+        color: #ffffff;
+        padding-bottom: 7%;
+    }
+
+    .hou003-about-welcoming-text h5{
+        font-family: 'Stardos Stencil';
+        font-size: 28px;
+        font-weight: 400;
+        color: #ff7500;
+    }
+
+    .hou003-about-openmaps {
+        padding-top: 15%;
+        cursor: pointer;
+    }
+
+ .hou003-about-floweremblem {
+    position: relative;
+    left: 0%;
+    margin-top: -12.5%;
+    z-index: 1;
+ }
+
+ .hou003-about-flowerbar {
+    position: relative;
+    z-index: 2;
+    width: 99vw;
+    left: 0%;
+    margin-top: -1%;
+ }
+
+ .hou003-about-middleflowerdrop {
+    position: relative;
+    z-index: 3;
+    margin-top: -14.5%;
+    right: -94.2%;
+ }
+
+ .hou003-about-secondhalf {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+  
+  .hou003-about-addressdetails-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    padding-right: 20%;
+  }
+
+   .hou003-about-addressdetails-text h2 {
+    z-index: 2;
+    font-family: 'Stardos Stencil';
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 5%;
+   }
+
+   .hou003-about-addressdetails-text h5 {
+    z-index: 2;
+    font-family: 'Stardos Stencil';
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ff7500;
+   }
+
+  .hou003-about-adressdetails-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .hou003-about-mapimage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    }
+
+    .hou003-about-addressdetails-image h3{
+        font-family: 'Blessed Day';
+        font-size: 52px;
+        font-weight: 400;
+        color: #ffffff;
+        position: relative;
+        padding-top: 5%;
+        left: 27%;
+    }
+
+ .hou003-about-floweremblemright {
+    position: relative;
+    z-index: 1;
+    right: -87%;
+    margin-top: -12.5%;
+ }
+
+ .hou003-about-flowerbarsecond {
+    position: relative;
+    z-index: 2;
+    width: 99vw;
+    left: 0%;
+ }
+
+ .hou003-about-floraldropend {
+    position: relative;
+    z-index: 3;
+    margin-top: -12.5%;
+ }
+
+ @media(width<1000px) {
+   .hou003-about-firsthalf {
+      flex-direction: column;
+   }
+
+   .hou003-about-welcoming-text {
+      margin-right: 15%;
+   }
+
+   .hou003-about-secondhalf {
+      flex-direction: column;
+   }
+
+   .hou003-about-welcoming-text {
+      padding-top: 20%;
+   }
+
+   .hou003-about-welcoming-text h2{
+      font-size: 2rem;
+  }
+
+  .hou003-about-welcoming-text h5{
+      font-size: 2rem;
+  }
+
+   .hou003-about-addressdetails-text h2 {
+      font-size: 2rem;
+     }
+  
+     .hou003-about-addressdetails-text h5 {
+      font-size: 2rem;
+     }
+
+   .hou003-about-addressdetails-text {
+      margin-left: 20%;
+   }
+
+   .hou003-about-floweremblemright {
+      right: -80%;
+   }
+
+   .hou003-about-flowerbarsecond {
+      margin-right: 2%;
+   }
+
+   .hou003-about-middleflowerdrop {
+      margin-left: -3%;
+   }
+
+   .hou003-about-floraldropend {
+      margin-top: -12%;
+   }
+ }
+
+ @media(width<650px) {
+   .hou003-about-firsthalf {
+      flex-direction: column;
+   }
+
+   .hou003-about-secondhalf {
+      flex-direction: column-reverse;
+   }
+
+   .hou003-about-welcoming-text {
+      padding-top: 20%;
+   }
+
+   .hou003-about-addressdetails-text h2 {
+      font-size: 2rem;
+     }
+  
+     .hou003-about-addressdetails-text h5 {
+      font-size: 2rem;
+     }
+
+   .hou003-about-topfloraldrop {
+      width: 18%;
+   }
+
+   .hou003-about-familyphoto {
+      width: 80%;
+      right: -10%;
+   }
+
+   .hou003-about-openmaps {
+      width: 90%;
+      margin-right: -3%;
+   }
+
+   .hou003-about-floweremblem {
+      width: 35%;
+      z-index: 1;
+      margin-top: -35%;
+   }
+
+   .hou003-about-middleflowerdrop {
+      width: 10%;
+      left: 93%;
+      margin-top: -18%;
+   }
+
+   .hou003-about-mapimage {
+      width: 80%;
+      right: -10%;
+   }
+
+   .hou003-about-floweremblemright {
+      width: 35%;
+      z-index: 1;
+      left: 65%;
+      margin-top: -35%;
+   }
+
+   .hou003-about-floraldropend {
+      width: 10%;
+   }
+ }

@@ -1,0 +1,125 @@
+#hou003-Wishes {
+    background-color: #0B4246;
+    height: 100vh;
+}
+
+ .hou003-Wishes-content {
+    display: flex;
+    flex-direction: row;
+ }
+
+  .hou003-Wishes-familynamebuttonscontainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .hou003-Wishes-tofamily {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+     
+     .hou003-Wishes-tree {
+      position: relative;
+     }
+
+     .hou003-Wishes-tofamily h5 {
+      font-family: 'Stardos Stencil';
+      font-size: 28px;
+      font-weight: 400;
+      color: #ffffff;
+      border: 2px solid white;
+      border-radius: 5%;
+      padding: 5%;
+      width: 80%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+
+.hou003-Wishes-wishBox {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10% auto;
+    height: 40rem;
+    width: 30%;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #f9e5b3, #ffffff);
+  }
+  
+  .hou003-Wishes-buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+  
+  .hou003-Wishes-navButton {
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  .hou003-Wishes-wishCounter {
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stardos Stencil';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid white;
+  }
+
+ /* .hou003-Wishes-wishBox {
+  display: flex;
+  flex-direction: column;
+ } */
+
+  .hou003-Wishes-titlecombo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+   .hou003-Wishes-PersonPhoto {
+    position: absolute;
+   }
+
+   .hou003-Wishes-titlecombo h3{
+    font-family: 'Blessed Day';
+    font-size: 52px;
+    font-weight: 400;
+    color: #0B4246;
+    margin-left: 50%;
+   }
+
+   .hou003-Wishes-flower {
+    margin-left: 50%;
+   }
+
+   .hou003-Wishes-wishBox p{
+    font-family: 'Stardos Stencil';
+    font-size: 18px;
+    font-weight: 400;
+    color: #0B4246;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   }
+
+ .hou003-Wishes-begin {
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }

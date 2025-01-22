@@ -1,0 +1,378 @@
+#hou003-Events {
+    background: linear-gradient(to bottom, #f9e5b3, #ffffff);
+}
+
+ .hou003-events-leaves {
+   width: 100%;
+ }
+
+ .hou003-events-leavesdiv {
+   position: absolute;
+   width: 100%;
+   object-fit: contain;
+   right: 50%;
+   transform: translateX(50%);
+ }
+
+ .hou003-events-inviting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Blessed Day';
+    font-size: 5rem;
+    font-weight: 400;
+    color: #0B4246;
+    padding-top: 10%;
+ }
+
+ .hou003-events-content {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding: 8%;
+ }
+
+   .hou003-events-box1 {
+      width: 27rem;
+      height: 25rem;
+      border-radius: 1rem;
+      box-shadow: 2px;
+   }
+
+      .hou003-events-box1rectangle {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background-color: rgba(250, 236, 199, 1);
+         width: 27rem;
+         height: 22rem;
+         border-radius: 1rem;
+      }
+
+      .hou003-events-sathyanarayanpooja {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         margin-top: -20%;
+         } 
+
+      .hou003-events-box1 h3 {
+         font-family: 'Stardos Stencil';
+         font-size: 2.1rem;
+         font-weight: 400;
+         color: #0B4246;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding: 3%;
+         }
+
+      .hou003-events-box1 h7 {
+         font-family: 'Stardos Stencil';
+         font-size: 2.1rem;
+         font-weight: 400;
+         color: #ff7500;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding: 3%;
+      }
+
+   .hou003-events-bouquet1 {
+      margin-left: 5%;
+      margin-top: -8%;
+   }
+
+   .hou003-events-box2 {
+      width: 27rem;
+      height: 25rem;
+      margin-left: 5%;
+   }
+
+      .hou003-events-box2rectangle {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background-color: rgba(250, 236, 199, 1);
+         width: 27rem;
+         height: 22rem;
+         margin-left: 5%;
+         border-radius: 1rem;
+      }
+
+         .hou003-events-gruhapravesha {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: -20%;
+         }
+
+         .hou003-events-box2rectangle h3{
+            font-family: 'Stardos Stencil';
+            font-size: 2.1rem;
+            font-weight: 400;
+            color: #0B4246;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 3%;
+         }
+
+         .hou003-events-box2rectangle h7 {
+            font-family: 'Stardos Stencil';
+            font-size: 2.1rem;
+            font-weight: 400;
+            color: #ff7500;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 3%;
+         }
+
+   .hou003-events-bouquet2 {
+      margin-left: 5%;
+      margin-top: -8%;
+   }
+
+   .hou003-events-box3 {
+      width: 27rem;
+      height: 25rem;
+      margin-left: 5%;
+   }
+
+      .hou003-events-box3rectangle {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background-color: rgba(250, 236, 199, 1);
+         width: 27rem;
+         height: 22rem;
+         margin-left: 5%;
+         border-radius: 1rem;
+      }
+
+      .hou003-events-bhojana {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         margin-top: -20%;
+      }
+
+      .hou003-events-box3rectangle h3 {
+         font-family: 'Stardos Stencil';
+         font-size: 2.1rem;
+         font-weight: 400;
+         color: #0B4246;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding: 3%;
+      }
+
+      .hou003-events-box3rectangle h7 {
+         font-family: 'Stardos Stencil';
+         font-size: 2.1rem;
+         font-weight: 400;
+         color: #ff7500;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding: 3%;
+      }
+
+ .hou003-events-bouquet3 {
+   display: block;
+   margin: auto;
+   margin-top: -5%;
+ }
+
+ .hou003-events-facility{
+   display: flex;
+   flex-direction: row;
+ }
+  
+  .hou003-events-facility-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-left: 25%;
+   margin-top: 3%;
+   z-index: 2; 
+  }
+
+   .hou003-events-facility-text h3 {
+      font-family: 'Stardos Stencil';
+      font-size: 2.1rem;
+      color: #ff7500;
+   }
+
+   .hou003-events-facility-text h7 {
+      font-family: 'Stardos Stencil';
+      font-size: 2.1rem;
+      color: #0B4246;
+   }
+
+  .hou003-events-line {
+   display: block;
+   margin-top: 3%;
+   padding-left: 12.5%;
+   z-index: 1;
+  }
+
+  .hou003-events-facilities {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-top: 5%;
+  }
+
+   .hou003-events-facilities-parking {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 50%;
+   }
+
+    .hou003-events-facilities h7 {
+      font-family: 'Stardos Stencil';
+      font-size: 2.1rem;
+      color: #0B4246;
+      padding: 20%;
+    }
+
+   .hou003-events-facilities-elevator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 50%;
+   }
+
+   @media(width<1000px) {
+      .hou003-events-content {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .hou003-events-box1 {
+         padding-top: 2%;
+      }
+
+      .hou003-events-bouquet1 {
+         padding-top: 5%;
+         margin-left: -0%;
+      }
+
+      .hou003-events-box2 {
+         padding-top: 8%;
+         margin-right: 8%;
+      }
+
+      .hou003-events-bouquet2 {
+         padding-top: 15%;
+         margin-left: 0%;
+      }
+
+      .hou003-events-box3 {
+         padding-top: 8%;
+         margin-right: 8%;
+      }
+
+      .hou003-events-bouquet3{
+         padding-top: 3%;
+      }
+   }
+
+   @media(width<800px) {
+      .hou003-events-facility{
+         display: flex;
+         flex-direction: column;
+      }
+
+      .hou003-events-facility-text {
+         align-self: center;
+         margin-left: 0%;
+      }
+
+      .hou003-events-line{
+         height: 1rem;
+         width: 20rem;
+         align-self: center;
+      }
+
+      .hou003-events-facilities {
+         align-self: center;
+         margin-left: -25%;
+      }
+   }
+
+   @media(width<650px) {
+      .hou003-events-facilities {
+         margin-left: -27%;
+      }  
+
+      .hou003-events-bouquet1 {
+         padding-bottom: 3%;
+      }
+
+      .hou003-events-bouquet2 {
+         padding-bottom: 3%;
+      }
+   }
+
+   @media(width<450px) {
+      .hou003-events-facilities {
+         margin-left: -40%;
+      }
+   }
+
+   @media(width<375px) {
+      .hou003-events-facilities {
+         margin-left: -50%;
+      }
+   }
+
+   @media(width<500px) {
+      .hou003-events-inviting {
+         padding-bottom: 3%;
+      }
+
+      .hou003-events-bouquet1 {
+         padding-bottom: 5%;
+      }
+
+      .hou003-events-bouquet2 {
+         padding-bottom: 5%;
+      }
+   }
+
+   @media(width<400px) {
+      .hou003-events-inviting {
+         text-align: center;
+         padding-bottom: 5%;
+      }
+   }
+
+   @media(width<376px) {
+      .hou003-events-bouquet1 {
+         padding-bottom: 10%;
+      }
+
+      .hou003-events-bouquet2 {
+         padding-bottom: 10%;
+      }
+   }

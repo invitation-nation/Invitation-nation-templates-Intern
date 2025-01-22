@@ -1,0 +1,76 @@
+#hou003-Facilities {
+    height: 55vh;
+    background: #0B4246;
+}
+
+ .hou003-facilities-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+ }
+
+  .hou003-facilities-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+   .hou003-facilities-contact h5 {
+    font-family: 'Stardos Stencil';
+    font-size: 28px;
+    font-weight: 400;
+    color: #f9e5b3;
+    padding-top: 15%;
+   }
+
+ .hou003-facilities-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+   .hou003-facilities-location h5 {
+    font-family: 'Stardos Stencil';
+    font-size: 28px;
+    font-weight: 400;
+    color: #f9e5b3;
+    padding-top: 15%;
+   }
+
+ .hou003-facilities-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+   .hou003-facilities-schedule h5 {
+    font-family: 'Stardos Stencil';
+    font-size: 28px;
+    font-weight: 400;
+    color: #f9e5b3;
+    padding-top: 15%;
+   }
+
+ .hou003-facilities-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+   .hou003-facilities-gallery h5 {
+    font-family: 'Stardos Stencil';
+    font-size: 28px;
+    font-weight: 400;
+    color: #f9e5b3;
+    padding-top: 15%;
+   }

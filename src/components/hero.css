@@ -1,0 +1,165 @@
+#hou003-Hero{
+  background-color: rgba(249, 231, 186, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+  .hou003-hero-leaves {
+    display: flex;
+    flex-direction: row;
+    margin-top: -27%;
+    margin-left: -5%;
+  }
+  
+  .hou003-hero-butterfly {
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    }
+
+  .hou003-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -65%;
+    margin-right: -50%;
+  }
+
+  .hou003-hero-ganeshidol {
+    position: relative;
+  }
+
+  .hou003-house-kalasha-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -35%;
+    margin-bottom: -10%;
+  }
+
+  .hou003-right-banana-tree-image {
+    position: absolute;
+    right: -9%;
+    bottom: -1%;
+    z-index: 2;
+  }
+
+  .hou003-left-banana-tree-image {
+    position: absolute;
+    left: -9%;
+    bottom: -1%;
+    z-index: 2;
+  }
+  
+  .hou003-hero-text {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+    width: 100%;
+    z-index: 1; 
+    flex-grow:3;         
+  }
+  
+  .hou003-hero-text h2 {
+    font-family: 'Stardos Stencil';  
+    font-size: 3rem;
+    color: #ff5733;  
+  }
+  
+  .hou003-hero-text h1 {
+    font-family: 'Stardos Stencil';
+    font-size: 3rem;
+    font-weight: 700;          
+    color: #0B4246;
+    font-weight: bold;       
+  }
+  
+  .hou003-hero-text p {
+    font-family: 'Blessed Day';
+    font-size: 3rem;   
+    font-weight: 400;
+    color: #ff7500      
+  }
+  
+  .hou003-hero-text h3 {
+    font-family: 'Stardos Stencil';
+    font-size: 3rem;
+    font-weight: 400;
+    color: #1c2833; 
+  }
+  
+  .hou003-hero-text h4 {
+    font-family: 'Blessed Day';
+    font-weight: 400;
+    font-size: 3rem;
+    color: #ff7500;
+  }
+
+  .hou003-hero-text h5 {
+    font-family: 'Stardos Stencil';
+    font-weight: 400;
+    font-size: 3rem;
+    color: #ff7500;
+  }
+#hou003-house-kalasha-image{
+  position: absolute;
+  bottom:-20%;
+  width: 30%;
+  left: 10%;
+}
+  @media(width<650px){
+    .hou003-hero-content{
+      margin-top: -135%;
+      margin-left: -45%;
+    }
+
+    .hou003-house-kalasha-image{
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 10%;
+    }
+
+    .hou003-right-banana-tree-image{
+      width: 45%;
+      right: -17%;
+    }
+
+    .hou003-left-banana-tree-image{
+      width: 45%;
+      left: -17%;
+    }
+
+    .hou003-hero-text{
+      font-size: 1.5rem;
+    }
+  }
+
+  @media(width<1000px){
+    .hou003-hero-content{
+      margin-top: -80%;
+      margin-left: -45%;
+    }
+
+    .hou003-right-banana-tree-image{
+      margin-right: -5%;
+    }
+
+    .hou003-left-banana-tree-image{
+      margin-left: -5%;
+    }
+
+    .hou003-hero-text{
+      font-size: 2.5rem;
+    }
+
+    .hou003-house-kalasha-image{
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 10%;
+    }
+  }

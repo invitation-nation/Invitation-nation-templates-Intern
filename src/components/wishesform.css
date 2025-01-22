@@ -1,0 +1,100 @@
+#hou003-WishesForm {
+    background: linear-gradient(to bottom, #f9e5b3, #ffffff);
+    height: 120vh;
+}
+
+ .hou003-wishesform-beginflowers {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+   .hou003-wishesform-floral {
+      margin-top: 2%;
+   }
+
+   .hou003-wishesform-butterflies {
+      margin-left: -5.4%;
+   }
+
+ .hou003-wishesform-wishescontainer {
+   display: flex;
+   flex-direction: row;
+ }
+
+  .hou003-wishesform-wishescontainer h3 {
+   font-family: 'Blessed Day';
+   font-size: 84px;
+   font-weight: 400;
+   color: #0B4246;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 5%;
+  }
+
+  .hou003-wishesform-entry {
+   padding-left: 10%;
+}
+
+   .hou003-wishesform-fullname {
+      display: flex;
+      flex-direction: column;
+      width: 40rem;
+      padding: 2%;
+      color: #0B4246;
+      font-family: 'Stardos Stencil';
+   }
+
+   .hou003-wishesform-input {
+      width: 40rem;
+      padding: 5%;
+      font-size: 16px;
+      border: 2px solid #0B4246;
+      border-radius: 1rem;
+      background-color: #f9e5b3; 
+   }
+
+   .hou003-wishesform-wishes {
+      display: flex;
+      flex-direction: column;
+      width: 40rem;
+      padding: 2%;
+      color: #0B4246;
+      font-family: 'Stardos Stencil';
+   }
+
+   .hou003-wishesform-wishbox {
+      width: 40rem;
+      padding: 25%;
+      font-size: 16px;
+      border: 2px solid #0B4246;
+      border-radius: 1rem;
+      background-color: #f9e5b3; 
+   }
+
+   .hou003-wishesform-submit {
+      display: flex;
+      flex-direction: row;
+      margin-right: 5rem;
+   }
+
+      .hou003-wishesform-submitbutton {
+         padding: 4%;
+         width: 25rem;
+         font-family: 'Stardos Stencil';
+         font-size: 28px;
+         font-weight: 400;
+         color: #f9e5b3; 
+         background-color: #0B4246; 
+         border-radius: 5rem;
+      }
+
+ .hou003-wishesform-endflowers {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 3%;
+   }
