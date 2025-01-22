@@ -7,6 +7,8 @@ import floraldrop from "../assets/img/hou003-WishesForm/hou003-wishesform-floral
 import butterflies from "../assets/img/hou003-WishesForm/hou003-wishesform-butterflies.svg"
 import leftleaves from "../assets/img/hou003-WishesForm/hou003-wishesform-leftleaves.svg"
 import rightleaves from "../assets/img/hou003-WishesForm/hou003-wishesform-rightleaves.svg"
+import Facilities from "./ammenities";
+import Invitation from "./invitationnation";
 
 function WishesForm(){
     return(
@@ -45,6 +47,8 @@ function WishesForm(){
                 <img src= {flowerbar4} alt="flowerbar-secondhalf" />
             </div>
         </section>
+        <Facilities/>
+        <Invitation/>
         </>
     );
 }

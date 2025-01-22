@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../components/navbar.css';
 import navmob from '../assets/img/hou003-Navbar/navbar-mobile.svg'
 import houseAnime from '../assets/img/hou003-Navbar/navbar-houseAnime.mp4';
+import hero from './hero.jsx';
+
 function NavBar() {
   const [loading, setLoading] = useState(false);
 

@@ -8,11 +8,11 @@ import Wishes from "./components/wishes";
 import WishesForm from "./components/wishesform";
 import Facilities from "./components/ammenities";
 import Invitation from "./components/invitationnation";
+import ImageGrid from "./components/gallerygrid";
 
 function App() {
   return (
     <>
-      <NavBar/>
       <Hero/>
       <Countdown/>
       <Invite/>
@@ -20,8 +20,6 @@ function App() {
       <Events/>
       <Wishes/>
       <WishesForm/>
-      <Facilities/>
-      <Invitation/>
     </>
   );
 }

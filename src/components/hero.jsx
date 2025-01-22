@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import '../components/hero.css';
+import NavBar from './navbar';
 import ganeshaidol from "../assets/img/hou003-Hero/ganesha-idol.svg";
 import houseimage from "../assets/img/hou003-Hero/hero-house.svg";
 import bananatree from "../assets/img/hou003-Hero/hero-banana-tree.svg";
@@ -12,6 +13,7 @@ import butterfly from "../assets/img/hou003-Hero/hero-butterflies.svg"
 function Hero() {
   return (
    <>
+   <NavBar/>
    <section id='hou003-Hero'>
       <div className="nimbus-container">
       <div className='hou003-hero-butterfly'>
