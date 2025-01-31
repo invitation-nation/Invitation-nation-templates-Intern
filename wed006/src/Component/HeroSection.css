@@ -28,10 +28,11 @@
   z-index: 4;
   background-image: url("../assets/hero-section/hero-text-background.png");
   background-position: center;
-  background-size: 35% 80%;
+  background-size: 25%;
   background-repeat: no-repeat;
   width: 100%;
   height: 60rem;
+  margin: -10% 0 0 0;
 }
 
 .hero-couple-box {
@@ -43,14 +44,14 @@
 
 .couple-name {
   font-family: Style Script;
-  font-size: 4.4rem;
+  font-size: 3rem;
   font-weight: 400;
   color: #7e1719;
 }
 
 .couple-weds {
   font-family: Philosopher;
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #1e7497;
 }
@@ -76,7 +77,7 @@
 
 .hero-time {
   font-family: Philosopher;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #7e1719;
   padding: 2rem 0;
@@ -166,6 +167,10 @@
   margin-bottom: -1rem;
   z-index: 4;
 }
+.ganesh > img {
+  width: 80%;
+  margin: auto;
+}
 
 .flower-bottom {
   position: absolute;
@@ -245,20 +250,21 @@
   text-align: center;
   padding: 2rem 0;
   font-family: Philosopher, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #1e7497;
 }
 .hero-location-text span {
   color: #7e1719;
-  font-size: 2.6rem;
+  font-size: 2rem;
 }
 
 .hero-btn-container {
   z-index: 9;
+  margin-top: -5%;
   font-family: philosopher, sans-serif;
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .hero-btn {
@@ -274,6 +280,15 @@
 @media (width<=650px) {
   #hero-section {
     height: 80vh;
+  }
+
+  .ganesh {
+    margin-top: -20%;
+  }
+
+  .hero-container-box {
+    background-size: 70%;
+    margin-top: -20%;
   }
 
   .hero-container {
@@ -295,5 +310,8 @@
 
   .golden-fence {
     width: 200%;
+  }
+  .hero-btn-container {
+    margin-top: -20%;
   }
 }

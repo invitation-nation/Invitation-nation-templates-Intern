@@ -1,6 +1,6 @@
-import NavBar from "../Components/Navbar";
-import SlideNav from "../Components/Slidernav";
-import Footer from "../Components/Footer";
+import NavBar from "../Components/wed006-Navbar";
+import SlideNav from "../Components/wed006-Slidernav";
+import Footer from "../Components/wed006-Footer";
 import Hero from "../Components/wed006-ScheduleSectionHero";
 
 export default function About() {

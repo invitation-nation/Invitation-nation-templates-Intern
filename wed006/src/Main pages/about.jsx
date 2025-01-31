@@ -1,9 +1,9 @@
-import NavBar from "../Components/Navbar";
-import SlideNav from "../Components/Slidernav";
-import Footer from "../Components/Footer";
-import AboutPages from "../Components/aboutpage";
-import AboutHero from "../Components/abouthero";
-import AboutDetails from "../Components/aboutDetails";
+import NavBar from "../Components/wed006-Navbar";
+import SlideNav from "../Components/wed006-Slidernav";
+import Footer from "../Components/wed006-Footer";
+import AboutPages from "../Components/wed006-aboutpage";
+import AboutHero from "../Components/wed006-abouthero";
+import AboutDetails from "../Components/wed006-aboutDetails";
 export default function About() {
   return (
     <>

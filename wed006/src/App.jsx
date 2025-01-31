@@ -4,7 +4,7 @@ import "./App.css";
 
 import Homepage from "./Main pages/Homepage";
 import Gallery from "./Main pages/Gallery";
-import Preloader from "./Components/Preloader";
+import Preloader from "./Components/wed006-Preloader";
 import About from "./Main pages/about";
 import SchedulePage from "./Main pages/SchedulePage";
 

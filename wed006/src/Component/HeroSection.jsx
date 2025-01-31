@@ -62,7 +62,9 @@ const HeroSection = () => {
               <div className="hero-time-container">
                 <img className="leaf-top" src={Leaf} alt="" />
                 <img className="leaf-bottom" src={Leaf} alt="" />
-                <span className="hero-time">21 & 22 &nbsp; Jan &nbsp;2024</span>
+                <span className="hero-time">
+                  &nbsp;21 & 22 &nbsp; Jan &nbsp;2024 &nbsp;
+                </span>
               </div>
               <span className="hero-location-text">
                 <span>Venue</span>
