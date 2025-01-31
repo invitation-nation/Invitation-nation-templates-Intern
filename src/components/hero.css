@@ -2,13 +2,17 @@
   background-color: rgba(249, 231, 186, 1);
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
 
   .hou003-hero-leaves {
     display: flex;
     flex-direction: row;
-    margin-top: -27%;
-    margin-left: -5%;
+    width: 150%;
+  }
+
+  .hou003-hero-decor {
+    width: 70%;
   }
   
   .hou003-hero-butterfly {
@@ -16,6 +20,26 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    animation: flyAround 5s infinite linear alternate;
+    margin-top: -30%;  
+  }
+
+    .butterflies img {
+      animation: flapWings 0.2s infinite alternate ease-in-out;
+    }
+
+    @keyframes flapWings {
+      0% { transform: rotate(0deg) scaleY(1); }
+      50% { transform: rotate(5deg) scaleY(0.9); }
+      100% { transform: rotate(0deg) scaleY(1); }
+    }
+    
+    @keyframes flyAround {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(20px, -10px) rotate(5deg); }
+      50% { transform: translate(40px, 10px) rotate(-5deg); }
+      75% { transform: translate(60px, -20px) rotate(8deg); }
+      100% { transform: translate(80px, 0px) rotate(0deg); }
     }
 
   .hou003-hero-content {
@@ -30,25 +54,28 @@
     position: relative;
   }
 
+  .hou003-hero-ganesha {
+    margin-top: 470%;
+  }
+
   .hou003-house-kalasha-image {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: -35%;
-    margin-bottom: -10%;
+    margin-top: -40%;
   }
 
   .hou003-right-banana-tree-image {
     position: absolute;
-    right: -9%;
+    right: -8%;
     bottom: -1%;
     z-index: 2;
   }
 
   .hou003-left-banana-tree-image {
     position: absolute;
-    left: -9%;
+    left: -8%;
     bottom: -1%;
     z-index: 2;
   }
@@ -58,8 +85,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 5%;
+    justify-content: flex-end;
     width: 100%;
     z-index: 1; 
     flex-grow:3;         
@@ -140,6 +166,10 @@
   }
 
   @media(width<1000px){
+    .hou003-hero-leaves {
+      width: 10%;
+    }
+
     .hou003-hero-content{
       margin-top: -80%;
       margin-left: -45%;

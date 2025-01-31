@@ -21,7 +21,7 @@ function Invite() {
 
         <img src= {icons} alt='triple-icons' className='hou003-invite-icons'/>
         {/* <video src={flowerbloom} className='hou003-invite-flowerbloom'></video> */}
-        <img src= {flowerbloom} alt='flower-bloom-animation' className='hou003-invite-flowerbloom'/>
+        {/* <img src= {flowerbloom} alt='flower-bloom-animation' className='hou003-invite-flowerbloom'/> */}
         </section>
         </>
     );

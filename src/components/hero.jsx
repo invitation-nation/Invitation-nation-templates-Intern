@@ -5,9 +5,7 @@ import NavBar from './navbar';
 import ganeshaidol from "../assets/img/hou003-Hero/ganesha-idol.svg";
 import houseimage from "../assets/img/hou003-Hero/hero-house.svg";
 import bananatree from "../assets/img/hou003-Hero/hero-banana-tree.svg";
-import leafbegin from "../assets/img/hou003-Hero/hero-leaves-begin.png"
-import leaf from "../assets/img/hou003-Hero/hero-leaf-single.png"
-import leafend from "../assets/img/hou003-Hero/hero-leaves-end.png"
+import decor from "../assets/img/hou003-Hero/hou003-Hero-decor.svg"
 import butterfly from "../assets/img/hou003-Hero/hero-butterflies.svg"
 
 function Hero() {
@@ -16,35 +14,15 @@ function Hero() {
    <NavBar/>
    <section id='hou003-Hero'>
       <div className="nimbus-container">
+      <div className='hou003-hero-leaves'>
+            <img src= {decor} alt="hero-decor" className='hou003-hero-decor'/>
+          </div>
       <div className='hou003-hero-butterfly'>
           <img src= {butterfly} alt="butterflies" />
         </div>
-          <div className='hou003-hero-leaves'>
-            <img src= {leafbegin} alt="leaves" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leaf} alt="single leaf" />
-            <img src= {leafend} alt="leaves end" />
-          </div>
           <div className='hou003-hero-content'>
             <div className="hou003-hero-ganeshaidol">
-              <img src = {ganeshaidol} alt="ganesha" />
+              <img src = {ganeshaidol} alt="ganesha" className='hou003-hero-ganesha'/>
             </div>
             <div className='hou003-hero-text'>
               <h4>Inviting you to Grihpravesh Ceremony & Pooja</h4>
