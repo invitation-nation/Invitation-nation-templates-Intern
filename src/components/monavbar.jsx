@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../App.css';
@@ -11,18 +11,21 @@ function Hou003MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-    if (!isOpen) {
-      document.documentElement.classList.add('no-scroll');
-    } else {
-      document.documentElement.classList.remove('no-scroll');
-    }
+    setIsOpen((prev) => !prev);
+    document.documentElement.classList.toggle('no-scroll', !isOpen);
+    console.log("Navbar toggled:", !isOpen); // Debugging log
   };
 
   const closeNavbar = () => {
     setIsOpen(false);
     document.documentElement.classList.remove('no-scroll');
   };
+
+  // Expose the toggle function globally
+  useEffect(() => {
+    window.toggleMobileNav = toggleNavbar;
+    console.log("toggleMobileNav function set"); // Debugging log
+  }, []);
 
   return (
     <section id="hou003-mobilenavbar">
