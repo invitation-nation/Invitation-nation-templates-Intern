@@ -19,7 +19,6 @@ export default function Gallerysection() {
             backgroundSize: "cover",
             backgroundPosition: "center -20rem",
             height: "85vh",
-            
           }}
         ></div>
         <Gallerygrid />

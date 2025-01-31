@@ -66,7 +66,7 @@
 }
 
 .aboutDetailsImage {
-  width: 50%; /* Image occupies 40% of card */
+  width: 40%; /* Image occupies 40% of card */
   border-radius: 10px;
   padding: 2rem;
 }
@@ -99,4 +99,69 @@
   font-size: 2.5rem;
   line-height: 1.5;
   color: #176386;
+}
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+  .aboutDetailsInfoCard {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align the content */
+    padding: 1.5rem;
+    width: 90%; /* Reduce card width for smaller screens */
+  }
+
+  .aboutDetailsImage {
+    width: 80%; /* Reduce image size */
+    padding: 1rem;
+  }
+
+  .aboutDetailsInfoCardText {
+    width: 100%; /* Text takes full width */
+    text-align: center; /* Center align text */
+  }
+
+  .aboutHeading {
+    font-size: 6rem; /* Reduce heading font size */
+  }
+
+  .aboutDescription {
+    font-size: 2rem; /* Adjust description font size */
+  }
+
+  .aboutDate {
+    font-size: 2rem; /* Adjust date font size */
+  }
+}
+
+/* For Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .aboutDetails {
+    padding: 1rem; /* Add padding to the container */
+  }
+
+  .backgroundOverlay {
+    background-size: cover; /* Ensure background covers the container */
+  }
+
+  .aboutDetailsInfoCard {
+    padding: 3rem; /* Reduce padding for smaller devices */
+    border-radius: 5px; /* Adjust card radius */
+  }
+
+  .aboutDetailsImage {
+    width: 90%; /* Image takes full width */
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .aboutHeading {
+    font-size: 3rem; /* Further reduce heading font size */
+  }
+
+  .aboutDescription {
+    font-size: 1.2rem; /* Reduce description font size */
+  }
+
+  .aboutDate {
+    font-size: 1.2rem; /* Adjust date font size */
+  }
 }

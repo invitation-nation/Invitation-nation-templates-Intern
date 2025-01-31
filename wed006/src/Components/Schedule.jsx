@@ -62,7 +62,7 @@ const Schedule = () => {
             <div className="schedule-flex">
               <div className="schedule-groom-brid-btn">
                 <button
-                  className={`schedule-btn ${
+                  className={`schedule-btn_1 ${
                     selectedEvent === "groom" ? "active" : ""
                   }`}
                   onClick={() => handleSelectEvent("groom")}
@@ -70,7 +70,7 @@ const Schedule = () => {
                   Groom
                 </button>
                 <button
-                  className={`schedule-btn ${
+                  className={`schedule-btn_1 ${
                     selectedEvent === "bride" ? "active" : ""
                   }`}
                   onClick={() => handleSelectEvent("bride")}
@@ -78,21 +78,21 @@ const Schedule = () => {
                   Bride
                 </button>
               </div>
-              <h2 className="schedule-title">Wishes for the Couple</h2>
+              <h2 className="schedule-title-schedule">Wishes for the Couple</h2>
             </div>
             <div className="schedule-flex">
-              <div className="schedule-nav">
+              <div className="schedule-nav_1">
                 <div className="schedule-controls">
-                  <div className="schedule-control-left" onClick={handlePrev}>
+                  <div className="schedule-control-left_1" onClick={handlePrev}>
                     <img src={ArrowBack} alt="Previous" />
                   </div>
-                  <div className="schedule-control-right" onClick={handleNext}>
+                  <div className="schedule-control-right_1" onClick={handleNext}>
                     <img src={ArrowForward} alt="Next" />
                   </div>
                 </div>
               </div>
-              <div className="schedule-container-box">
-                <div className="schedule-text-box">
+              <div className="schedule-container-box_1">
+                <div className="schedule-text-box_1">
                   <span className="schedule-date">{currentEvent.Details}</span>
                   <div className="schedule-details">
                     <div className="pages-details">
