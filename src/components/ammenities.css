@@ -1,5 +1,4 @@
 #hou003-Facilities {
-    height: 55vh;
     background: #0B4246;
 }
 
@@ -8,7 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
+    margin-top: 5%;
  }
 
   .hou003-facilities-contact {
@@ -21,7 +20,7 @@
 
    .hou003-facilities-contact h5 {
     font-family: 'Stardos Stencil';
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: 400;
     color: #f9e5b3;
     padding-top: 15%;
@@ -37,7 +36,7 @@
 
    .hou003-facilities-location h5 {
     font-family: 'Stardos Stencil';
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: 400;
     color: #f9e5b3;
     padding-top: 15%;
@@ -53,7 +52,7 @@
 
    .hou003-facilities-schedule h5 {
     font-family: 'Stardos Stencil';
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: 400;
     color: #f9e5b3;
     padding-top: 15%;
@@ -69,7 +68,7 @@
 
    .hou003-facilities-gallery h5 {
     font-family: 'Stardos Stencil';
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: 400;
     color: #f9e5b3;
     padding-top: 15%;

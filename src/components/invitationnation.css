@@ -4,20 +4,21 @@
 }
 
 .hou003-Invitation-container {
+   justify-items: center;
     padding-top: 7%;
-    transform: translateX(30%);
+    text-align: center;
 }
 
  .hou003-Invitation-container p {
     font-family: 'Flamenco';
-    font-size: 29.3px;
+    font-size: 3rem;
     font-weight: 400;
     color: #000000;
  }
 
  .hou003-Invitation-container a {
     font-family: 'Fjalla';
-    font-size: 29.3px;
+    font-size: 3rem;
     font-weight: 400;
     color: #A60035;
  }

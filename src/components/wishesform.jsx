@@ -24,9 +24,11 @@ function WishesForm(){
             </div>
             <div className="nimbus-container">
                 <div className="hou003-wishesform-wishescontainer">
-                    <img src= {leftleaves} alt="leaves-on-left" />
-                    <h3>Send your Wishes</h3>
-                    <img src= {rightleaves} alt="leaves-on-right" />
+                    <div className="hou003-wishesform-leaves"> 
+                        <img src= {leftleaves} alt="leaves-on-left" className="hou003-wishesform-leaf"/>
+                        <h3>Send your Wishes</h3>
+                        <img src= {rightleaves} alt="leaves-on-right" className="hou003-wishesform-leaf"/>
+                    </div>
                     <div className="hou003-wishesform-entry">
                         <form className="hou003-wishesform-form">
                             <div className="hou003-wishesform-fullname"> 
