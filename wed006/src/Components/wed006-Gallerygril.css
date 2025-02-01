@@ -177,6 +177,29 @@
   margin: 0 auto; /* Center the smaller images */
 }
 
+.gallery-bg {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensures the image covers the area properly */
+  position: relative;
+  top: -200px; /* Moves image up */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-bg {
+    height: 50vh;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .image-grid {
     grid-template-columns: repeat(2, minmax(200px, 1fr));

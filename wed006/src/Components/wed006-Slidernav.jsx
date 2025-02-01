@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 export default function SlideNav() {
   return (
     <div className="slidenav-main">
+      <div className="backgroundOverlay"></div>
       <div className="slide-nav-container">
         <div className="nav-buttons">
           <div className="nav-button-flex">

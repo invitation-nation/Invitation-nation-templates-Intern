@@ -6,21 +6,15 @@ import SlideNav from "../Components/wed006-Slidernav";
 import Footer from "../Components/wed006-Footer";
 import NavBar from "../Components/wed006-Navbar";
 import gallerybg from "../assets/Gellary_bg.jpg";
-
+import "../Components/wed006-Gallerygril.css";
 export default function Gallerysection() {
   return (
     <div className="gallery-section">
       <div className="gallery-section-heading">
         <NavBar />
-        <div
-          classname="gallery-bg"
-          style={{
-            backgroundImage: `url(${gallerybg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center -20rem",
-            height: "85vh",
-          }}
-        ></div>
+        <div className="gallery-bg">
+          <img src={gallerybg} alt="" />
+        </div>
         <Gallerygrid />
         <SlideNav />
         <Footer />

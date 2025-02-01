@@ -27,3 +27,9 @@
   height: auto;
   background-position: center;
 }
+
+@media (max-width: 768px) {
+  .about-page-image {
+    height: 30vh;
+  }
+}

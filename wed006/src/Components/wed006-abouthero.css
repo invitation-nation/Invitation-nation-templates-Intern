@@ -1,24 +1,52 @@
 .about-hero {
-  position: relative; /* To position the h1 absolutely within this div */
-  width: 100%; /* Ensure the div takes full width */
-  height: auto; /* Adjust height dynamically based on image */
-  text-align: center; /* Center text horizontally */
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .about-hero img {
-  width: 100%; /* Make the image take up the full width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove any extra space under the image */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .about-hero h1 {
-  font-family: Style Script;
-  position: absolute; /* Place the h1 relative to the parent div */
-  top: 70%; /* Position in the middle vertically */
-  left: 50%; /* Position in the middle horizontally */
-  transform: translate(-50%, -50%); /* Adjust for exact center */
-  color: white; /* Ensure the text is visible */
-  font-size: 8rem; /* Adjust font size as needed */
+  font-family: "Style Script", cursive;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 8rem;
   font-weight: 400;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-hero h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .about-hero {
+    max-height: 350px;
+  }
+  .about-hero h1 {
+    font-size: 5rem;
+    top: 70%;
+  }
 }

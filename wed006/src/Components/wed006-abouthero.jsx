@@ -1,6 +1,7 @@
 import "./wed006-abouthero.css";
 import aboutBg from "../assets/about-section/aboutBg.png";
 
+
 const AboutHero = () => {
   return (
     <div className="about-hero">

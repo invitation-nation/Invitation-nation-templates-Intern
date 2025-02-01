@@ -98,6 +98,14 @@ const Schedule = () => {
                 </a>
               </div>
             </div>
+            <div className="schedule-controls_2">
+              <div className="schedule-control-left" onClick={handlePrev}>
+                <img src={ArrowBack} alt="Previous" />
+              </div>
+              <div className="schedule-control-right" onClick={handleNext}>
+                <img src={ArrowForward} alt="Next" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
