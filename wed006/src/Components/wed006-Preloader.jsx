@@ -1,62 +1,39 @@
-import React, { useEffect } from "react";
-
+import React, { useEffect, useState } from "react";
+import flowerOutline from "../assets/rose-outline.png";
+import overlayImage from "../assets/overlay.png"; // The overlay image
 import "./wed006-Preloader.css";
 
 const Preloader = () => {
+  const [activeDot, setActiveDot] = useState(0);
+
   useEffect(() => {
-    const handleLoad = () => {
-      
-      const hidePreloader = () => {
-        const preloader = document.getElementById("preloader");
-        if (preloader) preloader.style.display = "none";
-      };
+    const interval = setInterval(() => {
+      setActiveDot((prev) => (prev + 1) % 3); // Cycle through 3 dots
+    }, 1000);
 
-      
-      const addAnimationClasses = () => {
-        const addAnimation = (id, delay) => {
-          setTimeout(() => {
-            const element = document.getElementById(id);
-            if (element) element.classList.add("animation");
-          }, delay);
-        };
-
-        addAnimation("preloader-blue", 0); 
-        addAnimation("preloader-red", 500); 
-        addAnimation("preloader-purple", 1000); 
-      };
-
-      // Hide preloader and add animation classes with delay
-      setTimeout(hidePreloader, 5000); // Hide preloader after 0ms
-      addAnimationClasses(); // Add animation classes immediately
-    };
-
-    window.addEventListener("load", handleLoad);
-
-    // Handle the case where the load event doesn't fire (e.g., when resources are cached)
-    setTimeout(handleLoad, 5000); // Wait 5 seconds
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div>
-      <div
-        id="preloader"
-        style={{
-          width: "100vw",
-          height: "100vh",
-        }}
-      >
-        <img src="" alt="" className="line" />
-      <div id="preloader" className="preloader">
-        {/* Add your preloader content here */}
+    <div id="preloader">
+      <div className="preloader">
+        <div className="image-container">
+          {/* Flower outline */}
+          <img src={flowerOutline} alt="Loading" className="flower" />
+
+          {/* Masking effect for overlay */}
+          <div className="overlay-mask">
+            <img src={overlayImage} alt="Overlay" className="overlay" />
+          </div>
+        </div>
+
+        {/* Dots animation */}
+        <div className="dots">
+          <span className={`dot ${activeDot === 0 ? "active" : ""}`}></span>
+          <span className={`dot ${activeDot === 1 ? "active" : ""}`}></span>
+          <span className={`dot ${activeDot === 2 ? "active" : ""}`}></span>
+        </div>
       </div>
-      <div id="preloader-blue" className="preloader-blue"></div>
-      <div id="preloader-red" className="preloader-red"></div>
-      <div id="preloader-purple" className="preloader-purple"></div>
-    </div>
     </div>
   );
 };
